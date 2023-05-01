@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.32410416.js",
+    "main.js": "/static/js/main.87d291e0.js",
     "static/js/787.e371f496.chunk.js": "/static/js/787.e371f496.chunk.js",
     "static/media/2019.jpg": "/static/media/2019.cad6e8a63709f0b6fd87.jpg",
     "static/media/2016.jpg": "/static/media/2016.f217e08aca3f8a5b33a6.jpg",
@@ -13,10 +13,10 @@
     "static/media/ConcreteCanoeLogoImage.png": "/static/media/ConcreteCanoeLogoImage.3c311c8ef9b091333643.png",
     "static/media/HomePastCanoes.jpg": "/static/media/HomePastCanoes.5ab01b91b4a474c66347.jpg",
     "index.html": "/index.html",
-    "main.32410416.js.map": "/static/js/main.32410416.js.map",
+    "main.87d291e0.js.map": "/static/js/main.87d291e0.js.map",
     "787.e371f496.chunk.js.map": "/static/js/787.e371f496.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.32410416.js"
+    "static/js/main.87d291e0.js"
   ]
 }
