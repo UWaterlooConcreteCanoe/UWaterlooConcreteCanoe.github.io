@@ -16,10 +16,10 @@ function App() {
                 <Link to={'/'} className='nav-link'>Home</Link>
               </li>
               <li className='nav-item'>
-                <Link to={'/about'} className='nav-link'>About</Link>
+                <Link to={'about'} className='nav-link'>About</Link>
               </li>
               <li className='nav-item'>
-                <Link to={'/past-canoes'} className='nav-link'>Past Canoes</Link>
+                <Link to={'past-canoes'} className='nav-link'>Past Canoes</Link>
               </li>
             </ul>
           </div>
