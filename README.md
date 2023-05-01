@@ -1,4 +1,33 @@
-# Getting Started with Create React App
+# Updating the Website (non-coder friendly!)
+
+To update the website, it is easiest to make changes directly on GitHub by using the Add File and pencil-shapped Edit File buttons. 
+
+GitHub will calls these changes a "commit" and will prompt you for a commit description, fill these fields to your liking. After adding your description select the `Commit directly to the main branch` option and press `Commit changes`
+
+## Past Canoes
+
+To add a past canoe, follow these steps:
+
+1. Add the picture to the `src/assets/past-canoes` folder. The filename should to be in the `year.jpg` format. For example: `2022.jpg`
+
+2. Open the `src/pages/PastCanoes.tsx` file, and paste the following line in top section of the file. Make sure to adjust this line to the year you're adding
+
+```typescript
+import canoe2022 from '../assets/past-canoes/2022.jpg';
+```
+3. Navigate to inside the PastCanoes() function and insert a new empty line after the following line:
+
+``` tsx
+<div className="row justify-content-center text-center" style={{marginTop: "1.5%", marginBottom: "1.5%"}}><h1>Past Canoes</h1></div>
+```
+4. On the new line that you just created, insert the information for the new canoe in the format shown below. Recall that the image was named canoe2022 in step 2, if you're uploading a different year, this should be adjusted. The name and description should be in quotes.
+
+```typescript
+{PastCanoe(canoe2022, "NAME", "description")}
+```
+
+
+# Development (for coders!)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
