@@ -18,7 +18,7 @@ import canoe2022 from '../assets/past-canoes/2022.jpg';
 3. Navigate to inside the PastCanoes() function and insert a new empty line after the following line:
 
 ``` tsx
-<div className="row justify-content-center text-center" style={{marginTop: "1.5%", marginBottom: "1.5%"}}><h1>Past Canoes</h1></div>
+<div className="row justify-content-center text-center" style={{marginTop: "75px", marginBottom: "1.5%"}}><h1>Past Canoes</h1></div>
 ```
 4. On the new line that you just created, insert the information for the new canoe in the format shown below. Recall that the image was named canoe2022 in step 2, if you're uploading a different year, this should be adjusted. The name and description should be in quotes.
 

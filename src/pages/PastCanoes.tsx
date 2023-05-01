@@ -10,10 +10,10 @@ import canoe2015 from '../assets/past-canoes/2015.jpg';
 function PastCanoe(picture: string, name: string, blurb: string) {
     return (
         <div className="row justify-content-center" style={{marginTop: "1.5%", marginBottom: "1.5%"}}>
-            <div className="col-4">
+            <div className="col-5">
                 <img src={picture} className="img-fluid" alt={name}></img>
             </div>
-            <div className="col-4">
+            <div className="col-5">
                 <h3>{name}</h3>
                 <p>{blurb}</p>
             </div>
@@ -24,7 +24,7 @@ function PastCanoe(picture: string, name: string, blurb: string) {
 function PastCanoes() {
     return (
         <div className="container-fluid">
-            <div className="row justify-content-center text-center" style={{marginTop: "1.5%", marginBottom: "1.5%"}}><h1>Past Canoes</h1></div>
+            <div className="row justify-content-center text-center" style={{marginTop: "75px", marginBottom: "1.5%"}}><h1>Past Canoes</h1></div>
             {PastCanoe(canoe2022, "THE FLYING GOOSEMAN (2022)", "The Flying Gooseman was a pirate themed canoe developed for the 2022 CNCCC competition in Sherbrooke, Quebec. This was the first competition back in person in two years due to the COVID-19 pandemic and the team brought home the award for the Most Sustainable Mix.")}
             {PastCanoe(canoe2021, "ONLINE COMPETITION (2021)", "The 2021 CNCCC competition was conducted online, where instead of designing and constructing an altogether new canoe, competitors were required to analyze and reverse-engineering a previous prototype and provide additional design recommendations. The Waterloo team conducted a review of their 2019 prototype, and placed 3rd in the overall rankings. ")}
             {PastCanoe(canoe2020, "THE GREY GOOSE (2020)", "The 2020 competition was cancelled due to the COVID-19 pandemic. At this point, all work was halted on the Grey Goose, a canoe themed after the wild beasts known to chase Waterloo students across campus— Canadian geese. ")}
