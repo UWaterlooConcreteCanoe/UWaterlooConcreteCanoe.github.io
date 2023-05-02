@@ -4,6 +4,15 @@ To update the website, it is easiest to make changes directly on GitHub by using
 
 GitHub will calls these changes a "commit" and will prompt you for a commit description, fill these fields to your liking. After adding your description select the `Commit directly to the main branch` option and press `Commit changes`
 
+## Joining Form
+
+1. Look at the embed information for the new form. To avoid formatting and other issues, copy only the **src="link"** field from the embed info
+2. navigate to `src/pages/Join.tsx`. On line 11 (shown below), replace the src="link" field with the new value
+
+```tsx
+<iframe width="640px" height="600px" title="join-form" src="https://forms.office.com/Pages/ResponsePage.aspx?id=h1o6cprzIkqSRz_CQMATlnO8OjhqoIRIvJhMsNGBHK5UMDlIU0VNVTdMSTVMTTlCRThNNlo4R0FISy4u&embed=true" style={{border: "none", maxWidth: "100%", maxHeight: "100vh"}}> </iframe>
+```
+
 ## Past Canoes
 
 To add a past canoe, follow these steps:
@@ -18,7 +27,7 @@ import canoe2022 from '../assets/past-canoes/2022.jpg';
 3. Navigate to inside the PastCanoes() function and insert a new empty line after the following line:
 
 ``` tsx
-<div className="row justify-content-center text-center" style={{marginTop: "75px", marginBottom: "1.5%"}}><h1>Past Canoes</h1></div>
+{/** new canoe info goes here! */}
 ```
 4. On the new line that you just created, insert the information for the new canoe in the format shown below. Recall that the image was named canoe2022 in step 2, if you're uploading a different year, this should be adjusted. The name and description should be in quotes.
 

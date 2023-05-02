@@ -1,8 +1,9 @@
 import React from 'react';
 
 function Join() {
-    //frameborder="0" marginwidth="0" marginheight="0"
-    //allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen
+    
+    // to update the embeded form, replace the src="link" in line 11 with the src link for the new embed
+
     return (
         <div className="About" style={{marginTop: "75px"}}>
             <div className="row justify-content-center text-center" style={{marginTop: "75px", marginBottom: "1.5%"}}><h1>Join Us</h1></div>
