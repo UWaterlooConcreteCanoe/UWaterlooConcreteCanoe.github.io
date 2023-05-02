@@ -6,6 +6,7 @@ import { createHashRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './pages/ErrorPage';
 import Home from './pages/Home';
 import About from './pages/About';
+import Join from './pages/Join';
 import PastCanoes from './pages/PastCanoes';
 
 const router = createHashRouter([
@@ -25,6 +26,10 @@ const router = createHashRouter([
       {
         path: 'past-canoes',
         element: <PastCanoes />,
+      },
+      {
+        path: 'join-us',
+        element: <Join/>,
       }
     ],
   },

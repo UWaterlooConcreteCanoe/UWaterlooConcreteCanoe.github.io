@@ -21,12 +21,15 @@ function App() {
               <li className='nav-item'>
                 <Link to={'past-canoes'} className='nav-link'>Past Canoes</Link>
               </li>
+              <li className='nav-item'>
+                <Link to={'join-us'} className='nav-link'>Join Us</Link>
+              </li>
             </ul>
           </div>
         </nav>
       </header>
       <Outlet />
-      <footer className="App-footer bg-dark text-center text-white">
+      <footer className="App-footer bg-dark text-center text-white" style={{marginTop: "10vh"}}>
         <div className="container-fluid">
           <div className="row py-1">
             <div className="col-12">
