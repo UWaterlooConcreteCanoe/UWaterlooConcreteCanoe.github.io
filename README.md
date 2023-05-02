@@ -27,7 +27,7 @@ import canoe2022 from '../assets/past-canoes/2022.jpg';
 3. Navigate to inside the PastCanoes() function and insert a new empty line after the following line:
 
 ``` tsx
-{/** new canoe info goes here! */}
+{/** new canoe info goes below this comment! (do not remove this comment) */}
 ```
 4. On the new line that you just created, insert the information for the new canoe in the format shown below. Recall that the image was named canoe2022 in step 2, if you're uploading a different year, this should be adjusted. The name and description should be in quotes.
 
