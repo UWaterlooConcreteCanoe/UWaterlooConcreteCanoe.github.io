@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <nav className='navbar fixed-top navbar-expand-lg navbar-dark bg-dark'>
           <Link to={'/'} className='navbar-brand mx-3'>UWaterloo Concrete Canoe</Link>
-          <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+          <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
             <span className='navbar-toggler-icon'></span>
           </button>
           <div className='collapse navbar-collapse' id='navbarNavDropdown'>
@@ -16,10 +16,10 @@ function App() {
                 <Link to={'/'} className='nav-link'>Home</Link>
               </li>
               <li className='nav-item'>
-                <Link to={'/about'} className='nav-link'>About</Link>
+                <Link to={'about'} className='nav-link'>About</Link>
               </li>
               <li className='nav-item'>
-                <Link to={'/past-canoes'} className='nav-link'>Past Canoes</Link>
+                <Link to={'past-canoes'} className='nav-link'>Past Canoes</Link>
               </li>
             </ul>
           </div>
