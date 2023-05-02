@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.32410416.js",
+    "main.js": "/static/js/main.96a14cbd.js",
     "static/js/787.e371f496.chunk.js": "/static/js/787.e371f496.chunk.js",
     "static/media/2019.jpg": "/static/media/2019.cad6e8a63709f0b6fd87.jpg",
     "static/media/2016.jpg": "/static/media/2016.f217e08aca3f8a5b33a6.jpg",
@@ -8,15 +8,15 @@
     "static/media/2018.jpg": "/static/media/2018.20f49393d4b78824f89d.jpg",
     "static/media/2015.jpg": "/static/media/2015.7f9d81f7da6978ca7343.jpg",
     "static/media/2021.jpg": "/static/media/2021.bdaf750573c57b521ccf.jpg",
+    "static/media/HomePastCanoes.jpg": "/static/media/HomePastCanoes.bdaf750573c57b521ccf.jpg",
     "static/media/2022.jpg": "/static/media/2022.18556172ab28300c8ab4.jpg",
-    "static/media/ConcreteCanoeHeadImage-crop.jpg": "/static/media/ConcreteCanoeHeadImage-crop.15ceec4048d284476125.jpg",
+    "static/media/ConcreteCanoeHeadImage-crop.jpg": "/static/media/ConcreteCanoeHeadImage-crop.c463f9cdfa837476297c.jpg",
     "static/media/ConcreteCanoeLogoImage.png": "/static/media/ConcreteCanoeLogoImage.3c311c8ef9b091333643.png",
-    "static/media/HomePastCanoes.jpg": "/static/media/HomePastCanoes.5ab01b91b4a474c66347.jpg",
     "index.html": "/index.html",
-    "main.32410416.js.map": "/static/js/main.32410416.js.map",
+    "main.96a14cbd.js.map": "/static/js/main.96a14cbd.js.map",
     "787.e371f496.chunk.js.map": "/static/js/787.e371f496.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.32410416.js"
+    "static/js/main.96a14cbd.js"
   ]
 }
