@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div>
+    <div style={{marginBottom: "10vh"}}>
       <img src={headImage} className="img-fluid" alt="Concrete Canoe Head" style={{overflowX: "hidden", objectFit: "none", width: "100vw", height: "110vh", opacity: "0.4", zIndex: "0", filter: "brightness(50%)"}} />
       <div className="carousel-caption" style={{zIndex: "1", position: "absolute", top: "30vh"}}>
         <h1 className=" text-center">University of Waterloo Concrete Canoe</h1>

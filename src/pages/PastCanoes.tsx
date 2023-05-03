@@ -25,7 +25,7 @@ function PastCanoe(picture: string, name: string, blurb: string) {
 function PastCanoes() {
     // add a PastCanoe following the same format as the other ones listed
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" style={{marginBottom: "10vh"}}>
             <div className="row justify-content-center text-center" style={{marginTop: "75px", marginBottom: "1.5%"}}><h1>Past Canoes</h1></div>
 
             {/** new canoe info goes below this comment! (do not remove this comment) */}

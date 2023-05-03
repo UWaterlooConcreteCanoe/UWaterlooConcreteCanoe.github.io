@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Join from './pages/Join';
 import PastCanoes from './pages/PastCanoes';
+import Contact from './pages/Contact';
 
 const router = createHashRouter([
   {
@@ -30,6 +31,10 @@ const router = createHashRouter([
       {
         path: 'join-us',
         element: <Join/>,
+      },
+      {
+        path: 'contact',
+        element: <Contact/>
       }
     ],
   },

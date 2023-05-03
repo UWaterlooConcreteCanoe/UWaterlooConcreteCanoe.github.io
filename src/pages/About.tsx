@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
     return (
-        <div className="About">
+        <div className="About" style={{marginTop: "50px"}}>
         Who We Are
         </div>
     );
