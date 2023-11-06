@@ -37,6 +37,9 @@ function Home() {
           <Link to={`/sponsors`} className="display-6 link-dark">Sponsors</Link>
         </div>
       </div>
+
+      <iframe src="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A91189435&keywords=uw%20concrete%20canoe%20team&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=66a73f46-80d7-413f-bfbf-8c571e94e328&sid=(AZ
+" title="W3Schools Free Online Web Tutorials"></iframe>
     </div>
   );
 }
