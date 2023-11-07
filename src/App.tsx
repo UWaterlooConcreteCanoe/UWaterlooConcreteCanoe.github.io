@@ -53,6 +53,9 @@ function App() {
                 <Link to={'join-us'} className='nav-link'>Join Us</Link>
               </li>
               <li className='nav-item'>
+                <Link to={'media'} className='nav-link'>Media</Link>
+              </li>
+              <li className='nav-item'>
                 <Link to={'contact'} className='nav-link'>Contact</Link>
               </li>
             </ul>

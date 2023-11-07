@@ -9,6 +9,7 @@ import About from './pages/About';
 import Join from './pages/Join';
 import PastCanoes from './pages/PastCanoes';
 import Contact from './pages/Contact';
+import Media from './pages/Media';
 
 const router = createHashRouter([
   {
@@ -34,8 +35,12 @@ const router = createHashRouter([
       },
       {
         path: 'contact',
-        element: <Contact/>
-      }
+        element: <Contact/>,
+      },
+      {
+        path: 'media',
+        element: <Media/>,
+      },
     ],
   },
 ]);
