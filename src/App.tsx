@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import sponsors from './assets/FooterLogos.png';
-import HoverImg from './components/HoverImg';
 
 function Footer() {
   return (
@@ -22,7 +21,7 @@ function Footer() {
         </div>
         <div className="row py-1">
           <div className="col-12" style={{marginTop: "1vh"}}>
-            <HoverImg src={sponsors} hoverText="Sponsors" width="400px" href="." />
+            <img src={sponsors} alt="Sponsors" className="img-fluid" width="400px"/>
           </div>
         </div>
       </div>
