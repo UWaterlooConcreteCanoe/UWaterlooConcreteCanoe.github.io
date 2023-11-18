@@ -12,7 +12,7 @@ function Home() {
         <h1 className=" text-center">University of Waterloo Concrete Canoe</h1>
         <div className="row justify-content-center text-center g-0" style={{marginTop: "75px"}}>
           <div className="col-9 col-md-3 justify-content-right">
-            <img src={logo} className="img-fluid" alt="Concrete Canoe Logo" style={{width: "80%", height: "auto"}}/>
+            <img src={logo} className="img-fluid" alt="Concrete Canoe Logo" style={{width: "200px", height: "auto"}}/>
             
           </div>
           <div className="col-12 col-md-9">

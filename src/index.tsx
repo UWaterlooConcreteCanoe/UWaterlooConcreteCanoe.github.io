@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './pages/ErrorPage';
 import Home from './pages/Home';
-import About from './pages/About';
+import Sponsors from './pages/Sponsors';
 import Join from './pages/Join';
 import PastCanoes from './pages/PastCanoes';
 import Contact from './pages/Contact';
@@ -21,8 +21,8 @@ const router = createHashRouter([
         element: <Home />,
       },
       {
-        path: 'about',
-        element: <About />,
+        path: 'sponsors',
+        element: <Sponsors />,
       },
       {
         path: 'past-canoes',
