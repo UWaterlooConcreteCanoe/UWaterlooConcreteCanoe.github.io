@@ -81,15 +81,8 @@ function Sponsors() {
             <hr style={{backgroundColor:"gray", height:'4px', border:0}}></hr>
             {/*Melloul-Blamey Construction Inc.*/}
             <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://www.melloul.com/" target='blank'>
-                    <h3 style={{color:"black"}}>
-                        Melloul-Blamey Construction Inc. 
-                    </h3>
-                </a>
                 <div className='container' style={{width:plat_max_width, height:plat_max_height, backgroundColor:'white', display:'flex', alignItems:'center'}}>
-                <a href="https://www.melloul.com/" target='blank'>
-                    <img style={{maxHeight:"100%", maxWidth:"100%"}} src={logo_plat1} alt='Melloul-Blamey Construction Inc. Logo'></img>
-                </a>
+                    <HoverImg src={logo_plat1} hoverText='Melloul-Blamey Construction Inc.' href='https://www.melloul.com/'></HoverImg>
                 </div>
             </div>
         </div>
@@ -100,57 +93,29 @@ function Sponsors() {
             <hr style={{backgroundColor:"gold", height:'4px', border:0}}></hr>
             {/*Brown & Beattie Ltd.*/}
             <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://www.brownbeattie.com/" target='blank'>
-                    <h3 style={{color:"black"}}>
-                        Brown & Beattie Ltd.  
-                    </h3>
-                </a>
                 <div className='container' style={{width:gold_max_width, height:gold_max_height, backgroundColor:'white', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                <a href="https://www.brownbeattie.com/" target='blank'>
-                    <img style={{maxHeight:"100%", maxWidth:"100%"}} src={logo_gold1} alt='Brown & Beattie Ltd. Logo'></img>
-                </a>
+                    <HoverImg src={logo_gold1} hoverText='Brown & Beattie Ltd.' href='https://www.brownbeattie.com/'></HoverImg>
                 </div>
             </div>
 
             {/*CanCrete Equipment Ltd.*/}
             <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://www.cancrete.ca/" target='blank'>
-                    <h3 style={{color:"black"}}>
-                        CanCrete Equipment Ltd.   
-                    </h3>
-                </a>
                 <div className='container' style={{width:gold_max_width, height:gold_max_height, backgroundColor:'white', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                <a href="https://www.cancrete.ca/" target='blank'>
-                    <img style={{maxHeight:"100%", maxWidth:"100%"}} src={logo_gold2} alt='CanCrete Equipment Logo'></img>
-                </a>
+                    <HoverImg src={logo_gold2} hoverText='CanCrete Equipment Ltd.' href='https://www.cancrete.ca/'></HoverImg>
                 </div>
             </div>
 
             {/*Dillon Consulting*/}
             <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://www.dillon.ca/" target='blank'>
-                    <h3 style={{color:"black"}}>
-                        Dillon Consulting   
-                    </h3>
-                </a>
                 <div className='container' style={{width:gold_max_width, height:gold_max_height, backgroundColor:'white', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                <a href="https://www.dillon.ca/" target='blank'>
-                    <img style={{maxHeight:"100%", maxWidth:"100%"}} src={logo_gold3} alt='Dillon Consulting Logo'></img>
-                </a>
+                    <HoverImg src={logo_gold3} hoverText='Dillon Consulting' href='https://www.dillon.ca/'></HoverImg>
                 </div>
             </div>
 
             {/*GHD*/}
             <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://www.ghd.com/" target='blank'>
-                    <h3 style={{color:"black"}}>
-                        GHD Group   
-                    </h3>
-                </a>
                 <div className='container' style={{width:gold_max_width, height:gold_max_height, backgroundColor:'white', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                <a href="https://www.ghd.com/" target='blank'>
-                    <img style={{maxHeight:200, alignItems:'center'}} src={logo_gold4} alt='GHD Group Logo'></img>
-                </a>
+                    <HoverImg src={logo_gold4} hoverText='GHD Group' href='https://www.ghd.com/'></HoverImg>
                 </div>
             </div>
         </div>
@@ -161,43 +126,22 @@ function Sponsors() {
             <hr style={{backgroundColor:"silver", height:'4px', border:0}}></hr>
             {/*Mansteel Rebar Ltd.*/}
             <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://ca.linkedin.com/company/mansteel-rebar?trk=public_post_follow-view-profile" target='blank'>
-                    <h3 style={{color:"black"}}>
-                    Mansteel Rebar Ltd. 
-                    </h3>
-                </a>
                 <div className='container' style={{width:silver_max_width, height:silver_max_height, backgroundColor:'white', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                    <a href="https://ca.linkedin.com/company/mansteel-rebar?trk=public_post_follow-view-profile" target='blank'>
-                    <img style={{maxHeight:160, maxWidth:250}} src={logo_silver1} alt='Mansteel Rebar Ltd. Logo'></img>
-                    </a>
+                    <HoverImg src={logo_silver1} hoverText='Mansteel Rebar Ltd.' href='https://ca.linkedin.com/company/mansteel-rebar?trk=public_post_follow-view-profile' height="160" width="250"></HoverImg>
                 </div>
             </div>
 
             {/*PCL*/}
             <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://www.pcl.com/ca/en" target='blank'>
-                    <h3 style={{color:"black"}}>
-                    PCL Construction 
-                    </h3>
-                </a>
                 <div className='container' style={{width:silver_max_width, height:silver_max_height, backgroundColor:'white', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                    <a href="https://www.pcl.com/ca/en" target='blank'>
-                        <img style={{maxHeight:160, maxWidth:250}} src={logo_silver2} alt='PCL Logo'></img>
-                    </a>
+                    <HoverImg src={logo_silver2} hoverText='PCL Construction' href='https://www.pcl.com/ca/en' width="250" height = "160"></HoverImg>
                 </div>
             </div>
 
             {/*SOPREMA*/}
             <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://www.soprema.ca/en/" target='blank'>
-                    <h3 style={{color:"black"}}>
-                    SOPREMA
-                    </h3>
-                </a>
                 <div className='container' style={{width:silver_max_width, height:silver_max_height, backgroundColor:'white', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                    <a href="https://www.soprema.ca/en/" target='blank'>
-                        <img style={{maxHeight:160, maxWidth:250}} src={logo_silver3} alt='SOPREMA Logo'></img>
-                    </a>
+                    <HoverImg src={logo_silver3} hoverText='SOPREMA' href='https://www.soprema.ca/en/' width="250" height = "160"></HoverImg>
                 </div>
             </div>
         </div>
@@ -208,43 +152,22 @@ function Sponsors() {
             <hr style={{backgroundColor:"darkgoldenrod", height:'4px', border:0}}></hr>
             {/*Acadis Ltd.*/}
             <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://www.arcadis.com/en?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=GreaterTorontoAreaCA" target='blank'>
-                    <h3 style={{color:"black"}}>
-                    Acadis 
-                    </h3>
-                </a>
                 <div className='container' style={{width:bronze_max_width, height:bronze_max_height, backgroundColor:'white', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                    <a href="https://www.arcadis.com/en?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=GreaterTorontoAreaCA" target='blank'>
-                    <img style={{maxHeight:150, maxWidth:200}} src={logo_bronze1} alt='Acadis Logo'></img>
-                    </a>
+                    <HoverImg src={logo_bronze1} hoverText='Acadis' href='https://www.arcadis.com/en?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=GreaterTorontoAreaCA' width="200" height = "150"></HoverImg>
                 </div>
             </div>
 
             {/*GIP Ltd.*/}
             <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://gipi.com/" target='blank'>
-                    <h3 style={{color:"black"}}>
-                    Global Infrastructure Partners Inc.
-                    </h3>
-                </a>
                 <div className='container' style={{width:bronze_max_width, height:bronze_max_height, backgroundColor:'white', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                    <a href="https://gipi.com/" target='blank'>
-                    <img style={{maxHeight:150, maxWidth:200}} src={logo_bronze2} alt='GIP Logo'></img>
-                    </a>
+                    <HoverImg src={logo_bronze2} hoverText='Global Infrastructure Partners Inc.' href='https://gipi.com/' width="200" height = "150"></HoverImg>
                 </div>
             </div>
 
             {/*MTE Consultants Inc. */}
             <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://www.mte85.com/" target='blank'>
-                    <h3 style={{color:"black"}}>
-                    MTE Consultants Inc.
-                    </h3>
-                </a>
                 <div className='container' style={{width:bronze_max_width, height:bronze_max_height, backgroundColor:'white', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                    <a href="https://www.mte85.com/" target='blank'>
-                    <img style={{maxHeight:150, maxWidth:200}} src={logo_bronze3} alt='MTE Consultants Inc. Logo'></img>
-                    </a>
+                    <HoverImg src={logo_bronze3} hoverText='MTE Consultants Inc.' href='https://www.mte85.com/' width="200" height = "150"></HoverImg>
                 </div>
             </div>
             
@@ -255,31 +178,17 @@ function Sponsors() {
         <div className="row justify-content-center text-center" style={{marginTop: class_margin_top}}>
             <h1>Material Sponsors</h1>
             <hr style={{backgroundColor:"black", height:'4px', border:0}}></hr>
-            {/*Melloul-Blamey Construction Inc. */}
-            <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://www.melloul.com/" target='blank'>
-                    <h3 style={{color:"black"}}>
-                    Melloul-Blamey Construction Inc. 
-                    </h3>
-                </a>
+            {/*Master Builders Solutions Canada Inc. */}
+            <div className="company" style={{marginBottom: "30px"}}>
                 <div className='container' style={{width:material_max_width, height:material_max_height, backgroundColor:'white', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                    <a href="https://www.melloul.com/" target='blank'>
-                    <img style={{maxHeight:material_max_height, maxWidth:material_max_width}} src={logo_material1} alt='Melloul-Blamey Construction Inc. Logo'></img>
-                    </a>
+                    <HoverImg src={logo_material1} hoverText='Master Builders Solutions Canada Inc.' href='https://www.master-builders-solutions.com/en-us'></HoverImg>
                 </div>
             </div>
 
-            {/*GIP Ltd.*/}
+            {/*rainfresh*/}
             <div className="company" style={{marginBottom: "30px"}}> 
-                <a style={{textDecoration:"none"}} href="https://rainfresh.ca/" target='blank'>
-                    <h3 style={{color:"black"}}>
-                    Rainfresh
-                    </h3>
-                </a>
                 <div className='container' style={{width:material_max_width, height:material_max_height, backgroundColor:'white', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                    <a href="https://rainfresh.ca/" target='blank'>
-                    <img style={{maxHeight:material_max_height, maxWidth:material_max_width}} src={logo_material2} alt='Rainfresh Logo'></img>
-                    </a>
+                    <HoverImg src={logo_material2} hoverText='Rainfresh' href='https://rainfresh.ca/'></HoverImg>
                 </div>
             </div>
             

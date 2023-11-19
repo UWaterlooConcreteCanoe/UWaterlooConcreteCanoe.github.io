@@ -23,7 +23,7 @@ function Home() {
 
       
 
-      <div className="row pt-3">
+      {/**<div className="row pt-3">
         <div className="col-12 col-md-4 text-center">
           <Link to={`/join-us`} className="display-6 link-dark">Join Us</Link>
         </div>
@@ -36,7 +36,7 @@ function Home() {
         <div className="col-12 col-md-4 text-center">
           <Link to={`/sponsors`} className="display-6 link-dark">Sponsors</Link>
         </div>
-      </div>
+        </div>**/}
     </div>
   );
 }
