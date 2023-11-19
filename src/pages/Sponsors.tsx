@@ -1,5 +1,6 @@
 import React from 'react';
 {/*import company logos*/}
+import logo_1 from '../assets/sponsor_logo/Melloul-Blamey Logo (for Light Background).jpg';
 
 function Sponsors() {
     return (
@@ -22,7 +23,7 @@ function Sponsors() {
         </a>
 
         {/*button for sponsorship pdf*/}
-        <a href="UWaterlooConcreteCanoe/UWaterlooConcreteCanoe.github.io/Sponsorship_Information.pdf" target='blank'>
+        <a href="/workspaces/UWaterlooConcreteCanoe.github.io/Sponsorship_Information.pdf" target='blank'>
         <button type="button" className="btn btn-warning">Sponsor Package</button>
         </a>
 
@@ -45,8 +46,7 @@ function Sponsors() {
             </a>
             {/*clickable picture of company*/}
             <a href="https://www.melloul.com/" target='blank'>
-                add pic path to code
-                <img src=''></img>
+                <img src={logo_1}></img>
             </a>
             </div>
         </div>
@@ -65,7 +65,6 @@ function Sponsors() {
             {/*clickable picture of company*/}
             <a href="https://www.brownbeattie.com/" target='blank'>
                 add pic path to code
-                <img src=''></img>
             </a>
             </div>
 
@@ -78,8 +77,7 @@ function Sponsors() {
             </a>
             {/*clickable picture of company*/}
             <a href="https://www.cancrete.ca/" target='blank'>
-                add pic path to code
-                <img src=''></img>
+                add pic path to co
             </a>
             </div>
         </div>
