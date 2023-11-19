@@ -1,6 +1,8 @@
 import React from 'react';
-{/*import company logos*/}
-import logo_1 from '../assets/sponsor_logo/Melloul-Blamey Logo (for Light Background).jpg';
+// import company logos
+import logo_1 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/Melloul-Blamey Logo (for Light Background).jpg';
+import logo_2 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/brown and beattie.png';
+import logo_3 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/cancrete.png';
 
 function Sponsors() {
     return (
@@ -23,18 +25,18 @@ function Sponsors() {
         </a>
 
         {/*button for sponsorship pdf*/}
-        <a href="/workspaces/UWaterlooConcreteCanoe.github.io/Sponsorship_Information.pdf" target='blank'>
+        <a href="/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/Sponsorship_Information.pdf" download target='blank'>
         <button type="button" className="btn btn-warning">Sponsor Package</button>
         </a>
 
-        {/*Diamond Class*/}
-        <div className="row justify-content-center text-center" style={{marginTop: "30px"}}>
+        {/*Diamond Class, img max width=600px*/}
+        <div className="row justify-content-center text-center" style={{marginTop: "60px"}}>
             <h1>Diamond Sponsors</h1>
         
         </div>
 
-        {/*Platinum Class*/}
-        <div className="row justify-content-center text-center" style={{marginTop: "30px"}}>
+        {/*Platinum Class, img max width=450px*/}
+        <div className="row justify-content-center text-center" style={{marginTop: "60px"}}>
             <h1>Platinum Sponsors</h1>
 
             <div className="company" style={{marginBottom: "30px"}}> 
@@ -46,38 +48,35 @@ function Sponsors() {
             </a>
             {/*clickable picture of company*/}
             <a href="https://www.melloul.com/" target='blank'>
-                <img src={logo_1}></img>
+                <img style={{width: 450, height:"100%"}} src={logo_1} alt='Melloul-Blamey Construction Inc. Logo'></img>
             </a>
             </div>
         </div>
 
-        {/*Gold Class*/}
-        <div className="row justify-content-center text-center" style={{marginTop: "30px"}}>
+        {/*Gold Class, img max width=400px*/}
+        <div className="row justify-content-center text-center" style={{marginTop: "60px"}}>
             <h1>Gold Sponsors</h1>
 
-            {/*clickable name of company*/}
             <div className="company" style={{marginBottom: "30px"}}> 
             <a style={{textDecoration:"none"}} href="https://www.brownbeattie.com/" target='blank'>
                 <h3 style={{color:"black"}}>
                     Brown & Beattie Ltd.  
                 </h3>
             </a>
-            {/*clickable picture of company*/}
+
             <a href="https://www.brownbeattie.com/" target='blank'>
-                add pic path to code
+                <img style={{width: 400, height:"100%"}} src={logo_2}></img>
             </a>
             </div>
 
-            {/*clickable name of company*/}
             <div className="company" style={{marginBottom: "30px"}}> 
             <a style={{textDecoration:"none"}} href="https://www.cancrete.ca/" target='blank'>
                 <h3 style={{color:"black"}}>
                     CanCrete Equipment Ltd.   
                 </h3>
             </a>
-            {/*clickable picture of company*/}
             <a href="https://www.cancrete.ca/" target='blank'>
-                add pic path to co
+                <img src={logo_3}></img>
             </a>
             </div>
         </div>
