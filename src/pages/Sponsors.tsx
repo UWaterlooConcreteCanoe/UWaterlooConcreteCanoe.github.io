@@ -1,19 +1,20 @@
 import React from 'react';
 import HoverImg from '../components/HoverImg';
 // import company logos according to tier
-import logo_plat1 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/Melloul-Blamey Logo (for Light Background).jpg';
-import logo_gold1 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/brown and beattie.png';
-import logo_gold2 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/cancrete.png';
-import logo_gold3 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/dillon.jpg';
-import logo_gold4 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/GHD_Logo_Black_RGB.jpg';
-import logo_silver1 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/Mansteel-Logo.gif';
-import logo_silver2 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/PCL Logo.png';
-import logo_silver3 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/soprema-logo.jpg';
-import logo_bronze1 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/Arcadis.jpeg';
-import logo_bronze2 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/GIP Logo.jpg';
-import logo_bronze3 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/MTE_Colour.jpg';
-import logo_material1 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/MBS_logo.jpg';
-import logo_material2 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/Rainfresh.jpg';
+import logo_plat1 from '../assets/sponsor-logo/Melloul-Blamey Logo (for Light Background).jpg';
+import logo_gold1 from '../assets/sponsor-logo/brown and beattie.png';
+import logo_gold2 from '../assets/sponsor-logo/cancrete.png';
+import logo_gold3 from '../assets/sponsor-logo/dillon.jpg';
+import logo_gold4 from '../assets/sponsor-logo/GHD_Logo_Black_RGB.jpg';
+import logo_silver1 from '../assets/sponsor-logo/Mansteel-Logo.gif';
+import logo_silver2 from '../assets/sponsor-logo/PCL Logo.png';
+import logo_silver3 from '../assets/sponsor-logo/soprema-logo.jpg';
+import logo_bronze1 from '../assets/sponsor-logo/Arcadis.jpeg';
+import logo_bronze2 from '../assets/sponsor-logo/GIP Logo.jpg';
+import logo_bronze3 from '../assets/sponsor-logo/MTE_Colour.jpg';
+import logo_material1 from '../assets/sponsor-logo/MBS_logo.jpg';
+import logo_material2 from '../assets/sponsor-logo/Rainfresh.jpg';
+import Pdf from '../assets/sponsors-package/Sponsorship_Information.pdf';
 
 /*
 // name, website, location of logo
@@ -61,7 +62,7 @@ function Sponsors() {
         </a>
 
         {/*button for sponsorship pdf*/}
-        <a href="/workspaces/UWaterlooConcreteCanoe.github.io/public/Sponsorship_Information.pdf" download target='blank'>
+        <a href={Pdf} download target='blank'>
             <button type="button" className="btn btn-warning">Sponsor Package</button>
         </a>
 
