@@ -1,6 +1,6 @@
 import React from 'react';
 import HoverImg from '../components/HoverImg';
-// import company logos
+// import company logos according to tier
 import logo_plat1 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/Melloul-Blamey Logo (for Light Background).jpg';
 import logo_gold1 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/brown and beattie.png';
 import logo_gold2 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/cancrete.png';
@@ -17,7 +17,6 @@ import logo_material2 from '/workspaces/UWaterlooConcreteCanoe.github.io/src/ass
 
 /*
 // name, website, location of logo
-
 const plat = new Map([
     ['Melloul-Blamey Construction Inc.', ['https://www.melloul.com/', '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/Melloul-Blamey Logo (for Light Background).jpg']]
 ]);
@@ -29,6 +28,7 @@ const gold = new Map([
 */
 
 function Sponsors() {
+    // adjust the size of the sponsors' logos
     let plat_max_height = "300px";
     let plat_max_width = "400px";
     let gold_max_height = "200px";
@@ -42,7 +42,7 @@ function Sponsors() {
     let class_margin_top = "60px";
 
     return (
-        <div className="About" style={{marginTop: "50px", padding: "10%", alignContent: "center", minHeight: "80vh"}}>
+        <div className="About" style={{marginTop: "30px", padding: "10%", alignContent: "center", minHeight: "80vh"}}>
 
         <h1>Support Us</h1>
 
@@ -57,12 +57,12 @@ function Sponsors() {
 
         {/*button for email*/}
         <a href="mailto:concretecanoe@uwaterloo.ca"> {/*replace with correct email*/}
-        <button type="button" style={{marginRight: "30px"}} className="btn btn-warning">Email</button>
+            <button type="button" style={{marginRight: "30px"}} className="btn btn-warning">Email</button>
         </a>
 
         {/*button for sponsorship pdf*/}
         <a href="/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/Sponsorship_Information.pdf" download target='blank'>
-        <button type="button" className="btn btn-warning">Sponsor Package</button>
+            <button type="button" className="btn btn-warning">Sponsor Package</button>
         </a>
 
         {/*Diamond Class, img max width=500px*/}
@@ -74,11 +74,10 @@ function Sponsors() {
         </div>
         */}
 
-
         {/*Platinum Class*/}
         <div className="row justify-content-center text-center" style={{marginTop: class_margin_top}}>
             <h1>Platinum Sponsors</h1>
-            <hr style={{backgroundColor:"black", height:'4px', border:0}}></hr>
+            <hr style={{backgroundColor:"gray", height:'4px', border:0}}></hr>
             {/*Melloul-Blamey Construction Inc.*/}
             <div className="company" style={{marginBottom: "30px"}}> 
                 <a style={{textDecoration:"none"}} href="https://www.melloul.com/" target='blank'>
@@ -97,7 +96,7 @@ function Sponsors() {
         {/*Gold Class*/}
         <div className="row justify-content-center text-center" style={{marginTop: class_margin_top}}>
             <h1>Gold Sponsors</h1>
-            <hr style={{backgroundColor:"black", height:'4px', border:0}}></hr>
+            <hr style={{backgroundColor:"gold", height:'4px', border:0}}></hr>
             {/*Brown & Beattie Ltd.*/}
             <div className="company" style={{marginBottom: "30px"}}> 
                 <a style={{textDecoration:"none"}} href="https://www.brownbeattie.com/" target='blank'>
@@ -158,7 +157,7 @@ function Sponsors() {
         {/*Silver Class*/}
         <div className="row justify-content-center text-center" style={{marginTop: class_margin_top}}>
             <h1>Silver Sponsors</h1>
-            <hr style={{backgroundColor:"black", height:'4px', border:0}}></hr>
+            <hr style={{backgroundColor:"silver", height:'4px', border:0}}></hr>
             {/*Mansteel Rebar Ltd.*/}
             <div className="company" style={{marginBottom: "30px"}}> 
                 <a style={{textDecoration:"none"}} href="https://ca.linkedin.com/company/mansteel-rebar?trk=public_post_follow-view-profile" target='blank'>
@@ -205,7 +204,7 @@ function Sponsors() {
         {/*Bronze Class*/}
         <div className="row justify-content-center text-center" style={{marginTop: class_margin_top}}>
             <h1>Bronze Sponsors</h1>
-            <hr style={{backgroundColor:"black", height:'4px', border:0}}></hr>
+            <hr style={{backgroundColor:"darkgoldenrod", height:'4px', border:0}}></hr>
             {/*Acadis Ltd.*/}
             <div className="company" style={{marginBottom: "30px"}}> 
                 <a style={{textDecoration:"none"}} href="https://www.arcadis.com/en?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=GreaterTorontoAreaCA" target='blank'>
