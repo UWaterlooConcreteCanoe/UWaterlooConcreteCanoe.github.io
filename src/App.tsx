@@ -20,11 +20,13 @@ function Footer() {
             </svg>
           </a>
         </div>
+        {/** 
         <div className="row py-1">
           <div className="col-12" style={{marginTop: "1vh"}}>
             <HoverImg src={sponsors} width="400px" hoverText='Sponsors' href='.' />
           </div>
         </div>
+        */}
       </div>
     </div>
   )
@@ -32,7 +34,7 @@ function Footer() {
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{overflowX: "hidden" }}>
       <header className="App-header">
         <nav className='navbar fixed-top navbar-expand-lg navbar-dark bg-dark'>
           <Link to={'/'} className='navbar-brand mx-3'>UWaterloo Concrete Canoe</Link>
@@ -45,10 +47,10 @@ function App() {
                 <Link to={'/'} className='nav-link'>Home</Link>
               </li>
               <li className='nav-item'>
-                <Link to={'about'} className='nav-link'>About</Link>
+                <Link to={'past-canoes'} className='nav-link'>Past Canoes</Link>
               </li>
               <li className='nav-item'>
-                <Link to={'past-canoes'} className='nav-link'>Past Canoes</Link>
+                <Link to={'sponsors'} className='nav-link'>Sponsors</Link>
               </li>
               <li className='nav-item'>
                 <Link to={'join-us'} className='nav-link'>Join Us</Link>
@@ -64,7 +66,7 @@ function App() {
         </nav>
       </header>
       <Outlet />
-      <footer className="App-footer bg-dark text-center text-white">
+      <footer className="App-footer bg-dark text-center text-white" style={{height: "80px"}}>
         <Footer />
       </footer>
     </div>
