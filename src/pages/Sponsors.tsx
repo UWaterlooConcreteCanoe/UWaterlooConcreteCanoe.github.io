@@ -61,7 +61,7 @@ function Sponsors() {
         </a>
 
         {/*button for sponsorship pdf*/}
-        <a href="/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/Sponsorship_Information.pdf" download target='blank'>
+        <a href="/workspaces/UWaterlooConcreteCanoe.github.io/public/Sponsorship_Information.pdf" download target='blank'>
             <button type="button" className="btn btn-warning">Sponsor Package</button>
         </a>
 
