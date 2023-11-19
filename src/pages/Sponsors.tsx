@@ -1,4 +1,5 @@
 import React from 'react';
+{/*import company logos*/}
 
 function Sponsors() {
     return (
@@ -12,7 +13,7 @@ function Sponsors() {
         </p>
 
         <p style={{marginTop: "30px"}}>
-            Interested in sponsoring us? Email us or click on the package below for more information!
+            <b>Interested in sponsoring us? Email us or click on the package below for more information!</b>
         </p>
 
         {/*button for email*/}
@@ -20,27 +21,69 @@ function Sponsors() {
         <button type="button" style={{marginRight: "30px"}} className="btn btn-warning">Email</button>
         </a>
 
-       {/*button for sponsorship pdf*/}
-        <a href="/workspaces/UWaterlooConcreteCanoe.github.io/src/pages/Sponsorship_Information.pdf" target='blank'>
+        {/*button for sponsorship pdf*/}
+        <a href="UWaterlooConcreteCanoe/UWaterlooConcreteCanoe.github.io/Sponsorship_Information.pdf" target='blank'>
         <button type="button" className="btn btn-warning">Sponsor Package</button>
         </a>
 
+        {/*Diamond Class*/}
         <div className="row justify-content-center text-center" style={{marginTop: "30px"}}>
             <h1>Diamond Sponsors</h1>
         
         </div>
 
+        {/*Platinum Class*/}
         <div className="row justify-content-center text-center" style={{marginTop: "30px"}}>
             <h1>Platinum Sponsors</h1>
 
+            <div className="company" style={{marginBottom: "30px"}}> 
+            {/*clickable name of company*/}
             <a style={{textDecoration:"none"}} href="https://www.melloul.com/" target='blank'>
                 <h3 style={{color:"black"}}>
                     Melloul-Blamey Construction Inc. 
                 </h3>
             </a>
-        
+            {/*clickable picture of company*/}
+            <a href="https://www.melloul.com/" target='blank'>
+                add pic path to code
+                <img src=''></img>
+            </a>
+            </div>
         </div>
 
+        {/*Gold Class*/}
+        <div className="row justify-content-center text-center" style={{marginTop: "30px"}}>
+            <h1>Gold Sponsors</h1>
+
+            {/*clickable name of company*/}
+            <div className="company" style={{marginBottom: "30px"}}> 
+            <a style={{textDecoration:"none"}} href="https://www.brownbeattie.com/" target='blank'>
+                <h3 style={{color:"black"}}>
+                    Brown & Beattie Ltd.  
+                </h3>
+            </a>
+            {/*clickable picture of company*/}
+            <a href="https://www.brownbeattie.com/" target='blank'>
+                add pic path to code
+                <img src=''></img>
+            </a>
+            </div>
+
+            {/*clickable name of company*/}
+            <div className="company" style={{marginBottom: "30px"}}> 
+            <a style={{textDecoration:"none"}} href="https://www.cancrete.ca/" target='blank'>
+                <h3 style={{color:"black"}}>
+                    CanCrete Equipment Ltd.   
+                </h3>
+            </a>
+            {/*clickable picture of company*/}
+            <a href="https://www.cancrete.ca/" target='blank'>
+                add pic path to code
+                <img src=''></img>
+            </a>
+            </div>
+        </div>
+  
 
         </div>
     );
@@ -52,3 +95,4 @@ function Sponsors() {
 }
 
 export default Sponsors;
+
