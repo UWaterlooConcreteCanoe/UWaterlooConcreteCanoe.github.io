@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.17a1464d.js",
-    "static/js/787.6cd0ec6c.chunk.js": "/static/js/787.6cd0ec6c.chunk.js",
+    "main.css": "/static/css/main.bfe340fc.css",
+    "main.js": "/static/js/main.fdd8b163.js",
+    "static/js/787.e371f496.chunk.js": "/static/js/787.e371f496.chunk.js",
     "static/media/gallery_019.jpg": "/static/media/gallery_019.bfe09bf493291ae93c45.jpg",
     "static/media/gallery_022.jpg": "/static/media/gallery_022.c248c27d5d8681b815e0.jpg",
     "static/media/gallery_015.jpg": "/static/media/gallery_015.20a30cf1180e47c18fbe.jpg",
@@ -36,7 +37,6 @@
     "static/media/gallery_028.jpg": "/static/media/gallery_028.bfbd542306c30aa8c82e.jpg",
     "static/media/gallery_030.jpg": "/static/media/gallery_030.43dd4fd10589d490e97f.jpg",
     "static/media/2021.jpg": "/static/media/2021.bdaf750573c57b521ccf.jpg",
-    "static/media/HomePastCanoes.jpg": "/static/media/HomePastCanoes.bdaf750573c57b521ccf.jpg",
     "static/media/gallery_035.jpg": "/static/media/gallery_035.b1b3bcd34fb5b974a90c.jpg",
     "static/media/gallery_032.jpg": "/static/media/gallery_032.bd2f13267e65db7aa2a0.jpg",
     "static/media/gallery_029.jpg": "/static/media/gallery_029.9b96a5d16110725ea63f.jpg",
@@ -45,15 +45,30 @@
     "static/media/gallery_026.jpg": "/static/media/gallery_026.9b1d1a9992f1e670ca4a.jpg",
     "static/media/2022.jpg": "/static/media/2022.18556172ab28300c8ab4.jpg",
     "static/media/gallery_031.jpg": "/static/media/gallery_031.9e2b37689ee30bf46b0c.jpg",
+    "static/media/Rainfresh.jpg": "/static/media/Rainfresh.6c6f998edb07c35bf2bc.jpg",
     "static/media/ConcreteCanoeHeadImage-crop.jpg": "/static/media/ConcreteCanoeHeadImage-crop.c463f9cdfa837476297c.jpg",
-    "static/media/FooterLogos.png": "/static/media/FooterLogos.6561bd4746a1eed7173a.png",
+    "static/media/Sponsorship_Information.pdf": "/static/media/Sponsorship_Information.0097c791a99d13ba0198.pdf",
+    "static/media/GIP Logo.jpg": "/static/media/GIP Logo.b1ae6dd81ce86447d632.jpg",
+    "static/media/MBS_logo.jpg": "/static/media/MBS_logo.4411eac642934b58c8cd.jpg",
     "static/media/gallery_036.jpg": "/static/media/gallery_036.d79d6953fd1309fb4a60.jpg",
+    "static/media/MTE_Colour.jpg": "/static/media/MTE_Colour.1cffd27625acfb600e1f.jpg",
+    "static/media/Melloul-Blamey Logo (for Light Background).jpg": "/static/media/Melloul-Blamey Logo (for Light Background).3296f4698eb0994c41e6.jpg",
+    "static/media/Mansteel-Logo.gif": "/static/media/Mansteel-Logo.94854e2fc7c01c09b3c0.gif",
     "static/media/ConcreteCanoeLogoImage.png": "/static/media/ConcreteCanoeLogoImage.0b12c43f453211a9d59a.png",
+    "static/media/PCL Logo.png": "/static/media/PCL Logo.5b02faf6a5d7038b6c78.png",
+    "static/media/brown and beattie.png": "/static/media/brown and beattie.beaa4835df4fb5060781.png",
+    "static/media/GHD_Logo_Black_RGB.jpg": "/static/media/GHD_Logo_Black_RGB.e820d96ac44e91c4ece0.jpg",
+    "static/media/soprema-logo.jpg": "/static/media/soprema-logo.9e28fb82e85af5ae1e40.jpg",
+    "static/media/dillon.jpg": "/static/media/dillon.9cd06eea89a8e91853b1.jpg",
+    "static/media/Arcadis.jpeg": "/static/media/Arcadis.b2de1dcf180ad986556b.jpeg",
+    "static/media/cancrete.png": "/static/media/cancrete.50951898baf7c78eb26e.png",
     "index.html": "/index.html",
-    "main.17a1464d.js.map": "/static/js/main.17a1464d.js.map",
-    "787.6cd0ec6c.chunk.js.map": "/static/js/787.6cd0ec6c.chunk.js.map"
+    "main.bfe340fc.css.map": "/static/css/main.bfe340fc.css.map",
+    "main.fdd8b163.js.map": "/static/js/main.fdd8b163.js.map",
+    "787.e371f496.chunk.js.map": "/static/js/787.e371f496.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.17a1464d.js"
+    "static/css/main.bfe340fc.css",
+    "static/js/main.fdd8b163.js"
   ]
 }
