@@ -1,7 +1,4 @@
-import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import sponsors from './assets/FooterLogos.png';
-import HoverImg from './components/HoverImg';
 
 function Footer() {
   return (

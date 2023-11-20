@@ -1,8 +1,5 @@
-import React from 'react';
 import logo from '../assets/ConcreteCanoeLogoImage.png';
 import headImage from '../assets/ConcreteCanoeHeadImage-crop.jpg';
-import pastCanoes from '../assets/HomePastCanoes.jpg';
-import { Link } from 'react-router-dom';
 
 function Home() {
   return (
