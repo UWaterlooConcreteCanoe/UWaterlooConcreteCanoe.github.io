@@ -1,20 +1,20 @@
 import React from 'react';
 import HoverImg from '../components/HoverImg';
 // import company logos according to tier
-import logo_plat1 from '../assets/sponsor-logo/Melloul-Blamey Logo (for Light Background).jpg';
-import logo_gold1 from '../assets/sponsor-logo/brown and beattie.png';
-import logo_gold2 from '../assets/sponsor-logo/cancrete.png';
-import logo_gold3 from '../assets/sponsor-logo/dillon.jpg';
-import logo_gold4 from '../assets/sponsor-logo/GHD_Logo_Black_RGB.jpg';
-import logo_silver1 from '../assets/sponsor-logo/Mansteel-Logo.gif';
-import logo_silver2 from '../assets/sponsor-logo/PCL Logo.png';
-import logo_silver3 from '../assets/sponsor-logo/soprema-logo.jpg';
-import logo_bronze1 from '../assets/sponsor-logo/Arcadis.jpeg';
-import logo_bronze2 from '../assets/sponsor-logo/GIP Logo.jpg';
-import logo_bronze3 from '../assets/sponsor-logo/MTE_Colour.jpg';
-import logo_bronze4 from '../assets/sponsor-logo/albericilogo.jpg'
-import logo_material1 from '../assets/sponsor-logo/MBS_logo.jpg';
-import logo_material2 from '../assets/sponsor-logo/Rainfresh.jpg';
+import logo_plat1 from '../assets/sponsor-logo/5.png';
+import logo_gold1 from '../assets/sponsor-logo/1.png';
+import logo_gold2 from '../assets/sponsor-logo/2.png';
+import logo_gold3 from '../assets/sponsor-logo/3.png';
+import logo_gold4 from '../assets/sponsor-logo/4.png';
+import logo_silver1 from '../assets/sponsor-logo/6.png';
+import logo_silver2 from '../assets/sponsor-logo/7.png';
+import logo_silver3 from '../assets/sponsor-logo/8.png';
+import logo_bronze1 from '../assets/sponsor-logo/10.png';
+import logo_bronze2 from '../assets/sponsor-logo/12.png';
+import logo_bronze3 from '../assets/sponsor-logo/11.png';
+import logo_bronze4 from '../assets/sponsor-logo/9.png'
+import logo_material1 from '../assets/sponsor-logo/13.png';
+import logo_material2 from '../assets/sponsor-logo/14.png';
 import Pdf from '../assets/sponsors-package/Sponsorship_Information.pdf';
 
 function Sponsors() {
