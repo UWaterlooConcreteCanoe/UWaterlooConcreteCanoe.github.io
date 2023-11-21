@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.147901cd.css",
-    "main.js": "/static/js/main.04fe5626.js",
-    "static/js/787.6cd0ec6c.chunk.js": "/static/js/787.6cd0ec6c.chunk.js",
+    "main.css": "/static/css/main.bfe340fc.css",
+    "main.js": "/static/js/main.61e918d0.js",
+    "static/js/787.e371f496.chunk.js": "/static/js/787.e371f496.chunk.js",
     "static/media/gallery_019.jpg": "/static/media/gallery_019.bfe09bf493291ae93c45.jpg",
     "static/media/gallery_022.jpg": "/static/media/gallery_022.c248c27d5d8681b815e0.jpg",
     "static/media/gallery_015.jpg": "/static/media/gallery_015.20a30cf1180e47c18fbe.jpg",
@@ -29,6 +29,7 @@
     "static/media/2020.jpg": "/static/media/2020.983101b306552e03d36a.jpg",
     "static/media/gallery_006.jpg": "/static/media/gallery_006.89cdedc079b2f0e9d855.jpg",
     "static/media/gallery_005.jpg": "/static/media/gallery_005.f0488084c67965dbb20d.jpg",
+    "static/media/albericilogo.jpg": "/static/media/albericilogo.1ed5ccd729157b0711e1.jpg",
     "static/media/gallery_002.jpg": "/static/media/gallery_002.b65ea9a6383fc0c4d194.jpg",
     "static/media/gallery_034.jpg": "/static/media/gallery_034.fedb0bfbd93436b2a708.jpg",
     "static/media/2018.jpg": "/static/media/2018.20f49393d4b78824f89d.jpg",
@@ -63,12 +64,12 @@
     "static/media/Arcadis.jpeg": "/static/media/Arcadis.b2de1dcf180ad986556b.jpeg",
     "static/media/cancrete.png": "/static/media/cancrete.50951898baf7c78eb26e.png",
     "index.html": "/index.html",
-    "main.147901cd.css.map": "/static/css/main.147901cd.css.map",
-    "main.04fe5626.js.map": "/static/js/main.04fe5626.js.map",
-    "787.6cd0ec6c.chunk.js.map": "/static/js/787.6cd0ec6c.chunk.js.map"
+    "main.bfe340fc.css.map": "/static/css/main.bfe340fc.css.map",
+    "main.61e918d0.js.map": "/static/js/main.61e918d0.js.map",
+    "787.e371f496.chunk.js.map": "/static/js/787.e371f496.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.147901cd.css",
-    "static/js/main.04fe5626.js"
+    "static/css/main.bfe340fc.css",
+    "static/js/main.61e918d0.js"
   ]
 }
