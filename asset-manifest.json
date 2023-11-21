@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.147901cd.css",
-    "main.js": "/static/js/main.4199c85c.js",
-    "static/js/787.6cd0ec6c.chunk.js": "/static/js/787.6cd0ec6c.chunk.js",
+    "main.css": "/static/css/main.bfe340fc.css",
+    "main.js": "/static/js/main.0bdf3da4.js",
+    "static/js/787.e371f496.chunk.js": "/static/js/787.e371f496.chunk.js",
     "static/media/gallery_019.jpg": "/static/media/gallery_019.bfe09bf493291ae93c45.jpg",
     "static/media/gallery_022.jpg": "/static/media/gallery_022.c248c27d5d8681b815e0.jpg",
     "static/media/gallery_015.jpg": "/static/media/gallery_015.20a30cf1180e47c18fbe.jpg",
@@ -64,12 +64,12 @@
     "static/media/Arcadis.jpeg": "/static/media/Arcadis.b2de1dcf180ad986556b.jpeg",
     "static/media/cancrete.png": "/static/media/cancrete.50951898baf7c78eb26e.png",
     "index.html": "/index.html",
-    "main.147901cd.css.map": "/static/css/main.147901cd.css.map",
-    "main.4199c85c.js.map": "/static/js/main.4199c85c.js.map",
-    "787.6cd0ec6c.chunk.js.map": "/static/js/787.6cd0ec6c.chunk.js.map"
+    "main.bfe340fc.css.map": "/static/css/main.bfe340fc.css.map",
+    "main.0bdf3da4.js.map": "/static/js/main.0bdf3da4.js.map",
+    "787.e371f496.chunk.js.map": "/static/js/787.e371f496.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.147901cd.css",
-    "static/js/main.4199c85c.js"
+    "static/css/main.bfe340fc.css",
+    "static/js/main.0bdf3da4.js"
   ]
 }
