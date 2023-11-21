@@ -17,26 +17,15 @@ import logo_material1 from '../assets/sponsor-logo/MBS_logo.jpg';
 import logo_material2 from '../assets/sponsor-logo/Rainfresh.jpg';
 import Pdf from '../assets/sponsors-package/Sponsorship_Information.pdf';
 
-/*
-// name, website, location of logo
-const plat = new Map([
-    ['Melloul-Blamey Construction Inc.', ['https://www.melloul.com/', '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/Melloul-Blamey Logo (for Light Background).jpg']]
-]);
-
-const gold = new Map([
-    ['Brown & Beattie', ["https://www.brownbeattie.com/", '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/brown and beattie.png']],
-    ['CanCrete Equipment Ltd.', ["https://www.cancrete.ca/", '/workspaces/UWaterlooConcreteCanoe.github.io/src/assets/sponsor-logo/cancrete.png']]
-]);
-*/
-
 function Sponsors() {
     // adjust the size of the sponsors' logos
     let class_margin_top = "60px";
-    let plat_col_size = "col-7"
+    let plat_col_size = "col-6"
     let gold_col_size = "col-5"
     let silver_col_size = "col-4"
     let bronze_col_size = "col-3"
     let material_col_size = "col-2"
+    // note that there should be 1 per row for platinum, 2 per row for gold, 3 per row for silver, 4 per row for bronze, and 5 per row for material
 
 
     return (
@@ -93,6 +82,8 @@ function Sponsors() {
                 <div className={gold_col_size}>
                     <HoverImg src={logo_gold2} hoverText='CanCrete Equipment Ltd.' href='https://www.cancrete.ca/'></HoverImg>
                 </div>
+            </div>
+            <div className="row justify-content-center" style={{marginBottom: "30px"}}> 
                 {/*Dillon Consulting*/}
                 <div className={gold_col_size}>
                     <HoverImg src={logo_gold3} hoverText='Dillon Consulting' href='https://www.dillon.ca/'></HoverImg>
