@@ -6,9 +6,11 @@ import logo_gold1 from '../assets/sponsor-logo/1.png';
 import logo_gold2 from '../assets/sponsor-logo/2.png';
 import logo_gold3 from '../assets/sponsor-logo/3.png';
 import logo_gold4 from '../assets/sponsor-logo/4.png';
+import logo_gold5 from '../assets/sponsor-logo/15.png';
 import logo_silver1 from '../assets/sponsor-logo/6.png';
 import logo_silver2 from '../assets/sponsor-logo/7.png';
 import logo_silver3 from '../assets/sponsor-logo/8.png';
+import logo_silver4 from '../assets/sponsor-logo/16.png';
 import logo_bronze1 from '../assets/sponsor-logo/10.png';
 import logo_bronze2 from '../assets/sponsor-logo/12.png';
 import logo_bronze3 from '../assets/sponsor-logo/11.png';
@@ -93,6 +95,12 @@ function Sponsors() {
                     <HoverImg src={logo_gold4} hoverText='GHD Group' href='https://www.ghd.com/'></HoverImg>
                 </div>
             </div>
+            <div className="row justify-content-center" style={{marginBottom: "30px"}}> 
+                {/*EBC Inc */}
+                <div className={gold_col_size}>
+                    <HoverImg src={logo_gold5} hoverText='EBC Inc' href='https://ebcinc.com/en/?doing_wp_cron=1710357869.4692909717559814453125'></HoverImg>
+                </div>
+            </div>
 
         </div>
 
@@ -115,8 +123,12 @@ function Sponsors() {
                     <HoverImg src={logo_silver3} hoverText='SOPREMA' href='https://www.soprema.ca/en/' ></HoverImg>
                 </div>
             </div>
-
-            
+            <div className="row justify-content-center" style={{marginBottom: "30px"}}> 
+                {/*Gillam Group*/}
+                <div className={silver_col_size}>
+                    <HoverImg src={logo_silver4} hoverText='Gillam Group' href='https://gillamgroup.com' ></HoverImg>
+                </div>
+            </div>
         </div>
 
         {/*Bronze Class*/}
