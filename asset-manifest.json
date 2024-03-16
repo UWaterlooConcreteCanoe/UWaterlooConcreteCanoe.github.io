@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bfe340fc.css",
-    "main.js": "/static/js/main.fe47c3b8.js",
+    "main.js": "/static/js/main.bd42a8c4.js",
     "static/js/787.e371f496.chunk.js": "/static/js/787.e371f496.chunk.js",
     "static/media/gallery_019.jpg": "/static/media/gallery_019.bfe09bf493291ae93c45.jpg",
     "static/media/gallery_022.jpg": "/static/media/gallery_022.c248c27d5d8681b815e0.jpg",
@@ -48,6 +48,9 @@
     "static/media/ConcreteCanoeHeadImage-crop.jpg": "/static/media/ConcreteCanoeHeadImage-crop.c463f9cdfa837476297c.jpg",
     "static/media/Sponsorship_Information.pdf": "/static/media/Sponsorship_Information.0097c791a99d13ba0198.pdf",
     "static/media/gallery_036.jpg": "/static/media/gallery_036.d79d6953fd1309fb4a60.jpg",
+    "static/media/17.png": "/static/media/17.a3d2d6f1c204b5d88540.png",
+    "static/media/19.png": "/static/media/19.dba5556cc2d5feb9c5e2.png",
+    "static/media/18.png": "/static/media/18.d445c74c5d576ebafcb0.png",
     "static/media/5.png": "/static/media/5.bcb8559b6e392e800f2d.png",
     "static/media/3.png": "/static/media/3.6355652dfbe189f4e7b4.png",
     "static/media/6.png": "/static/media/6.9b2a6a5a23ea551c82be.png",
@@ -67,11 +70,11 @@
     "static/media/15.png": "/static/media/15.08c605864dcbd1b89d37.png",
     "index.html": "/index.html",
     "main.bfe340fc.css.map": "/static/css/main.bfe340fc.css.map",
-    "main.fe47c3b8.js.map": "/static/js/main.fe47c3b8.js.map",
+    "main.bd42a8c4.js.map": "/static/js/main.bd42a8c4.js.map",
     "787.e371f496.chunk.js.map": "/static/js/787.e371f496.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfe340fc.css",
-    "static/js/main.fe47c3b8.js"
+    "static/js/main.bd42a8c4.js"
   ]
 }
