@@ -10,6 +10,7 @@ import Join from './pages/Join';
 import PastCanoes from './pages/PastCanoes';
 import Contact from './pages/Contact';
 import Media from './pages/Media';
+import Subteams from './pages/Subteams';
 
 const router = createHashRouter([
   {
@@ -40,6 +41,10 @@ const router = createHashRouter([
       {
         path: 'media',
         element: <Media/>,
+      },
+      {
+        path: 'subteams',
+        element: <Subteams/>,
       },
     ],
   },
