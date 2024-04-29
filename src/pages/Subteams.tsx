@@ -45,16 +45,6 @@ const subteams: SubteamsProps[] = [
 ]
 
 function Subteams() {
-    // adjust the size of the sponsors' logos
-    let class_margin_top = "60px";
-    let plat_col_size = "col-6"
-    let gold_col_size = "col-5"
-    let silver_col_size = "col-4"
-    let bronze_col_size = "col-3"
-    let material_col_size = "col-2"
-    // note that there should be 1 per row for platinum, 2 per row for gold, 3 per row for silver, 4 per row for bronze, and 5 per row for material
-
-
     return (
         <div className="About" style={{marginTop: "30px", padding: "10%", alignContent: "center", minHeight: "80vh"}}>
 
