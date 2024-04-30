@@ -70,7 +70,7 @@ function Subteams() {
         </a>
 
         {/*form*/}
-        <a href="/join-us">
+        <a href="/#/join-us">
           <button
             type="button"
             style={{ marginRight: "30px" }}
