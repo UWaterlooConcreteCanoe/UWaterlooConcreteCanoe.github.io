@@ -50,6 +50,9 @@ function App() {
                 <Link to={'sponsors'} className='nav-link'>Sponsors</Link>
               </li>
               <li className='nav-item'>
+                <Link to={'subteams'} className='nav-link'>Subteams</Link>
+              </li>
+              <li className='nav-item'>
                 <Link to={'join-us'} className='nav-link'>Join Us</Link>
               </li>
               <li className='nav-item'>
