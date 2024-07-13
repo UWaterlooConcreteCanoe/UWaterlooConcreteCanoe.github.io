@@ -18,18 +18,22 @@ import logo_bronze2 from '../assets/sponsor-logo/12.png';
 import logo_bronze3 from '../assets/sponsor-logo/11.png';
 import logo_bronze4 from '../assets/sponsor-logo/9.png';
 import logo_bronze5 from '../assets/sponsor-logo/19.png';
+import logo_bronze6 from '../assets/sponsor-logo/22.png';
+import logo_bronze7 from '../assets/sponsor-logo/23.png';
 import logo_material1 from '../assets/sponsor-logo/13.png';
 import logo_material2 from '../assets/sponsor-logo/14.png';
+import logo_material3 from '../assets/sponsor-logo/20.png';
+import logo_material4 from '../assets/sponsor-logo/21.png';
 import Pdf from '../assets/sponsors-package/Sponsorship_Information.pdf';
 
 function Sponsors() {
     // adjust the size of the sponsors' logos
     let class_margin_top = "60px";
-    let plat_col_size = "col-6"
-    let gold_col_size = "col-5"
-    let silver_col_size = "col-4"
-    let bronze_col_size = "col-3"
-    let material_col_size = "col-2"
+    let plat_col_size = "col-5"
+    let gold_col_size = "col-4"
+    let silver_col_size = "col-3"
+    let bronze_col_size = "col-2"
+    let material_col_size = "col-1"
     // note that there should be 1 per row for platinum, 2 per row for gold, 3 per row for silver, 4 per row for bronze, and 5 per row for material
 
 
@@ -97,11 +101,11 @@ function Sponsors() {
           <hr
             style={{ backgroundColor: "gray", height: "4px", border: 0 }}
           ></hr>
-          {/*Melloul-Blamey Construction Inc.*/}
           <div
             className="row justify-content-center"
             style={{ marginBottom: "30px" }}
           >
+            {/*Melloul-Blamey Construction Inc.*/}
             <div className={plat_col_size}>
               <HoverImg
                 src={logo_plat1}
@@ -109,12 +113,8 @@ function Sponsors() {
                 href="https://www.melloul.com/"
               ></HoverImg>
             </div>
-          </div>
-          {/*Waterloo Engineering Endowment Fund */}
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
+
+            {/*Waterloo Engineering Endowment Fund */}
             <div className={plat_col_size}>
               <HoverImg
                 src={logo_plat2}
@@ -155,11 +155,6 @@ function Sponsors() {
                 href="https://www.cancrete.ca/"
               ></HoverImg>
             </div>
-          </div>
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
             {/*Dillon Consulting*/}
             <div className={gold_col_size}>
               <HoverImg
@@ -168,6 +163,11 @@ function Sponsors() {
                 href="https://www.dillon.ca/"
               ></HoverImg>
             </div>
+          </div>
+          <div
+            className="row justify-content-center"
+            style={{ marginBottom: "30px" }}
+          >
             {/*GHD*/}
             <div className={gold_col_size}>
               <HoverImg
@@ -176,11 +176,6 @@ function Sponsors() {
                 href="https://www.ghd.com/"
               ></HoverImg>
             </div>
-          </div>
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
             {/*EBC Inc */}
             <div className={gold_col_size}>
               <HoverImg
@@ -230,11 +225,6 @@ function Sponsors() {
                 href="https://www.soprema.ca/en/"
               ></HoverImg>
             </div>
-          </div>
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
             {/*Gillam Group*/}
             <div className={silver_col_size}>
               <HoverImg
@@ -243,6 +233,11 @@ function Sponsors() {
                 href="https://gillamgroup.com"
               ></HoverImg>
             </div>
+          </div>
+          <div
+            className="row justify-content-center"
+            style={{ marginBottom: "30px" }}
+          >
             {/*Lightweight Concrete Solutions Inc. */}
             <div className={silver_col_size}>
               <HoverImg
@@ -307,17 +302,35 @@ function Sponsors() {
                 href="https://alberici.com/"
               ></HoverImg>
             </div>
-          </div>
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
+
             {/*EngSoc */}
             <div className={bronze_col_size}>
               <HoverImg
                 src={logo_bronze5}
                 hoverText="EngSoc"
                 href="https://www.engsoc.uwaterloo.ca"
+              ></HoverImg>
+            </div>
+          </div>
+          <div
+            className="row justify-content-center"
+            style={{ marginBottom: "30px" }}
+          >
+            {/*Lafarge */}
+            <div className={bronze_col_size}>
+              <HoverImg
+                src={logo_bronze6}
+                hoverText="Lafarge"
+                href="https://www.lafarge.ca/en"
+              ></HoverImg>
+            </div>
+
+            {/*Edison Engineers Inc */}
+            <div className={bronze_col_size}>
+              <HoverImg
+                src={logo_bronze7}
+                hoverText="Edison Engineers Inc."
+                href="https://edisonengineers.ca"
               ></HoverImg>
             </div>
           </div>
@@ -352,6 +365,24 @@ function Sponsors() {
                 src={logo_material2}
                 hoverText="Rainfresh"
                 href="https://rainfresh.ca/"
+              ></HoverImg>
+            </div>
+
+            {/*sika*/}
+            <div className={material_col_size}>
+              <HoverImg
+                src={logo_material3}
+                hoverText="Sika"
+                href="https://can.sika.com/"
+              ></HoverImg>
+            </div>
+
+            {/*st marys cement*/}
+            <div className={material_col_size}>
+              <HoverImg
+                src={logo_material4}
+                hoverText="St Mary's Cement"
+                href="https://www.stmaryscement.com/"
               ></HoverImg>
             </div>
           </div>
