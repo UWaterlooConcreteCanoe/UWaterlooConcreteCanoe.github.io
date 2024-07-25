@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 interface SubteamsProps {
     name: string;
@@ -45,6 +45,8 @@ const subteams: SubteamsProps[] = [
 ]
 
 function Subteams() {
+    const [selectedSubteam, setSelectedSubteam] = useState<SubteamsProps>();
+
     return (
         <div className="About" style={{marginTop: "30px", padding: "10%", alignContent: "center", minHeight: "80vh"}}>
 
@@ -80,15 +82,24 @@ function Subteams() {
           </button>
         </a>
 
-        {
-            subteams.map((subteam) => {
-                return (
-                    <div style={{ marginTop: "30px" }}>
-                        <h3>{subteam.name}</h3>
-                        <p>{subteam.description}</p>
-                    </div>
-                );
-            })
+        <ul className="nav nav-tabs justify-content-center" style={{ marginTop: "30px" }}>
+            {
+                subteams.map(s => {
+                    return (
+                      <li className="nav-item">
+                        <button type="button" className="nav-link" onClick={() => setSelectedSubteam(s)}>{s.name}</button>
+                      </li>
+                    );
+                })
+            }
+        </ul>
+
+        {   
+            selectedSubteam &&
+                <div style={{ marginTop: "30px" }}>
+                    <h3>{selectedSubteam?.name}</h3>
+                    <p>{selectedSubteam?.description}</p>
+                </div>
         }
         </div>
     );
