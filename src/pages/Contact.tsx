@@ -25,7 +25,7 @@ function Contact() {
                     </div>
                     <div className="mb-3">
                         <label htmlFor="message" className="form-label">Please enter your message</label>
-                        <textarea className="row form-control" id="message" name="email" required />
+                        <textarea className="row form-control" id="message" name="message" required />
                     </div>
                     <button className="row btn btn-primary" type="submit">Send</button>
                 </form> 
