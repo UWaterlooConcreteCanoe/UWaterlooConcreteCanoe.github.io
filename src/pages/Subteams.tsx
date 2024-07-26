@@ -45,7 +45,7 @@ const subteams: SubteamsProps[] = [
 ]
 
 function Subteams() {
-    const [selectedSubteam, setSelectedSubteam] = useState<SubteamsProps>();
+    const [selectedSubteam, setSelectedSubteam] = useState<SubteamsProps>(subteams[0]);
 
     return (
         <div className="About" style={{marginTop: "30px", padding: "10%", alignContent: "center", minHeight: "80vh"}}>
