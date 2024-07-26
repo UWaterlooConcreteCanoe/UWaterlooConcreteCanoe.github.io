@@ -1,4 +1,27 @@
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react'; 
+
+
 function Contact() {
+
+    const form = useRef<any>();
+
+    const sendEmail = (e : any) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_5wo78yq', 'template_2vtjusa', form.current, {
+          publicKey: 'BtN5vWV_fRtsqAN9Z',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    };
     
     // to update the embeded form, replace the src="link" in line 11 with the src link for the new embed
 
@@ -10,7 +33,7 @@ function Contact() {
                 <p>Have a question or want more information? Fill out the form below to get in touch with us!</p>
             </div>        
             <div className="row">
-                <form className="col p-3" action="https://formsubmit.co/concretecanoe@uwaterloo.ca" method="POST">
+                <form ref={form} className="col p-3" onSubmit={sendEmail}>
                     <div className="mb-3">
                         <label htmlFor="subject" className="form-label">Subject</label>
                         <input className="row form-control" type="text" id="subject" name="subject" required />

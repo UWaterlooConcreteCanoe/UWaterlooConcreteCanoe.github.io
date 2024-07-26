@@ -35,34 +35,36 @@ function App() {
     <div className="App" style={{overflowX: "hidden" }}>
       <header className="App-header">
         <nav className='navbar fixed-top navbar-expand-lg navbar-dark bg-dark'>
-          <Link to={'/'} className='navbar-brand ms-3'><img src={Logo} alt="uWaterloo Concrete Canoe Logo" width="54" height="44" /></Link>
-          <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
-            <span className='navbar-toggler-icon'></span>
-          </button>
-          <div className='collapse navbar-collapse' id='navbarNavDropdown'>
-            <ul className='navbar-nav'>
-              <li className='nav-item'>
-                <Link to={'/'} className='nav-link'>Home</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to={'past-canoes'} className='nav-link'>Past Canoes</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to={'sponsors'} className='nav-link'>Sponsors</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to={'subteams'} className='nav-link'>Subteams</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to={'join-us'} className='nav-link'>Join Us</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to={'media'} className='nav-link'>Media</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to={'contact'} className='nav-link'>Contact</Link>
-              </li>
-            </ul>
+          <div className='d-flex justify-content-between'>
+            <Link to={'/'} className='navbar-brand ms-3'><img src={Logo} alt="uWaterloo Concrete Canoe Logo" width="54" height="44" /></Link>
+            <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+              <span className='navbar-toggler-icon'></span>
+            </button>
+            <div className='collapse navbar-collapse' id='navbarNavDropdown'>
+              <ul className='navbar-nav'>
+                <li className='nav-item'>
+                  <Link to={'/'} className='nav-link'>Home</Link>
+                </li>
+                <li className='nav-item'>
+                  <Link to={'past-canoes'} className='nav-link'>Past Canoes</Link>
+                </li>
+                <li className='nav-item'>
+                  <Link to={'sponsors'} className='nav-link'>Sponsors</Link>
+                </li>
+                <li className='nav-item'>
+                  <Link to={'subteams'} className='nav-link'>Subteams</Link>
+                </li>
+                <li className='nav-item'>
+                  <Link to={'join-us'} className='nav-link'>Join Us</Link>
+                </li>
+                <li className='nav-item'>
+                  <Link to={'media'} className='nav-link'>Media</Link>
+                </li>
+                <li className='nav-item'>
+                  <Link to={'contact'} className='nav-link'>Contact</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
