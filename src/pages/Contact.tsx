@@ -27,6 +27,8 @@ function Contact() {
                         <label htmlFor="message" className="form-label">Please enter your message</label>
                         <textarea className="row form-control" id="message" name="message" required />
                     </div>
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_next" value="https://waterlooconcretecanoe.ca/#/contact" />
                     <button className="row btn btn-primary" type="submit">Send</button>
                 </form> 
             </div>
