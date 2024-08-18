@@ -1,9 +1,8 @@
 import { Link, Outlet } from 'react-router-dom';
 import Logo from "./assets/ConcreteCanoeLogoImage.png";
-import { sponsors } from './assets/sponsor-logo/sponsors-helper';
-import CarouselItem from "./components/CarouselItem";
-
-// TODO: uncomment SponsorCarousel once transparent sponsor logos are added
+// TODO: uncomment once transparent sponsor logos are added
+// import { sponsors } from './assets/sponsor-logo/sponsors-helper';
+// import CarouselItem from "./components/CarouselItem";
 // function SponsorCarousel() {
 //   // carousel of sponsor logos
 //   return (
