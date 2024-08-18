@@ -6,7 +6,7 @@ import { createHashRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './pages/ErrorPage';
 import Home from './pages/Home';
 import Sponsors from './pages/Sponsors';
-import Join from './pages/Join';
+import Join from './pages/Join-archived';
 import PastCanoes from './pages/PastCanoes';
 import Contact from './pages/Contact';
 import Media from './pages/Media';

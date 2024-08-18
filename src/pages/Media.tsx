@@ -36,73 +36,93 @@ import gallery_34 from '../assets/gallery/gallery_034.jpg';
 import gallery_35 from '../assets/gallery/gallery_035.jpg';
 import gallery_36 from '../assets/gallery/gallery_036.jpg';
 import CarouselItem from "../components/CarouselItem";
+const num_per_row = 5;
+const gallery_items = [
+  gallery_1,
+  gallery_2,
+  gallery_3,
+  gallery_4,
+  gallery_5,
+  gallery_6,
+  gallery_7,
+  gallery_8,
+  gallery_9,
+  gallery_10,
+  gallery_11,
+  gallery_12,
+  gallery_13,
+  gallery_14,
+  gallery_15,
+  gallery_16,
+  gallery_17,
+  gallery_18,
+  gallery_19,
+  gallery_20,
+  gallery_21,
+  gallery_22,
+  gallery_23,
+  gallery_24,
+  gallery_25,
+  gallery_26,
+  gallery_27,
+  gallery_28,
+  gallery_29,
+  gallery_30,
+  gallery_31,
+  gallery_32,
+  gallery_33,
+  gallery_34,
+  gallery_35,
+  gallery_36,
+];
+
+let rows : string[][] = [];
+while (gallery_items.length > 0) {
+    rows.push(gallery_items.splice(0, num_per_row));
+    if (rows[rows.length - 1].length < num_per_row) {
+        for (let i = rows[rows.length - 1].length; i < num_per_row; i++) {
+            rows[rows.length - 1].push("");
+        }
+    }
+}
 
 function Media() {
-  const gallery_items = [
-    gallery_1,
-    gallery_2,
-    gallery_3,
-    gallery_4,
-    gallery_5,
-    gallery_6,
-    gallery_7,
-    gallery_8,
-    gallery_9,
-    gallery_10,
-    gallery_11,
-    gallery_12,
-    gallery_13,
-    gallery_14,
-    gallery_15,
-    gallery_16,
-    gallery_17,
-    gallery_18,
-    gallery_19,
-    gallery_20,
-    gallery_21,
-    gallery_22,
-    gallery_23,
-    gallery_24,
-    gallery_25,
-    gallery_26,
-    gallery_27,
-    gallery_28,
-    gallery_29,
-    gallery_30,
-    gallery_31,
-    gallery_32,
-    gallery_33,
-    gallery_34,
-    gallery_35,
-    gallery_36,
-  ];
-  return (
-    <div className="container-fluid" style={{marginBottom: "10vh"}}>
-        <div className="row justify-content-center text-center" style={{marginTop: "75px", marginBottom: "1.5%"}}><h1>Photo Gallery</h1></div>
-        <div className="row justify-content-center text-center px-5" style={{ marginBottom: "1.5%" }}>
-            <div id="carouselExample" className="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    {
-                        gallery_items.map((item, index) => {
-                            return (
-                                <CarouselItem image={item} key={index} first={index === 0}/>
-                            );
-                        })
-                    }
-                </div>
 
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
+    return (
+      <div className="container-fluid" style={{ marginBottom: "10vh" }}>
+        <div
+          className="row justify-content-center text-center"
+          style={{ marginTop: "75px", marginBottom: "1.5%" }}
+        >
+          <h1>Photo Gallery</h1>
         </div>
-    </div>
-  );
+        {rows.map((row, index) => {
+            return (
+                <div className="row justify-content-center" style={{ marginBottom: "30px"}}>
+                {row.map((item, index) => {
+                    if (item === "") {
+                        return (
+                            <div className="col-sm"></div>
+                        );
+                    }
+                    else {
+                        return (
+                            <div className="col-sm">
+                                <img src={item} alt="" style={{width: "100%", height: "20vh"}}/>
+                            </div>
+                        );
+                    }
+                })}
+                </div>
+            );
+        }
+        )}
+        <div
+          className="row justify-content-center text-center px-5"
+          style={{ marginBottom: "1.5%" }}
+        ></div>
+      </div>
+    );
 }
 
 export default Media;

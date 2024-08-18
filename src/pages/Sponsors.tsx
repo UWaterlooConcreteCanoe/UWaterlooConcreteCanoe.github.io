@@ -1,30 +1,39 @@
 import React from 'react';
 import HoverImg from '../components/HoverImg';
 // import company logos according to tier
-import logo_plat1 from '../assets/sponsor-logo/5.png';
-import logo_plat2 from '../assets/sponsor-logo/17.png';
-import logo_gold1 from '../assets/sponsor-logo/1.png';
-import logo_gold2 from '../assets/sponsor-logo/2.png';
-import logo_gold3 from '../assets/sponsor-logo/3.png';
-import logo_gold4 from '../assets/sponsor-logo/4.png';
-import logo_gold5 from '../assets/sponsor-logo/15.png';
-import logo_silver1 from '../assets/sponsor-logo/6.png';
-import logo_silver2 from '../assets/sponsor-logo/7.png';
-import logo_silver3 from '../assets/sponsor-logo/8.png';
-import logo_silver4 from '../assets/sponsor-logo/16.png';
-import logo_silver5 from '../assets/sponsor-logo/18.png';
-import logo_bronze1 from '../assets/sponsor-logo/10.png';
-import logo_bronze2 from '../assets/sponsor-logo/12.png';
-import logo_bronze3 from '../assets/sponsor-logo/11.png';
-import logo_bronze4 from '../assets/sponsor-logo/9.png';
-import logo_bronze5 from '../assets/sponsor-logo/19.png';
-import logo_bronze6 from '../assets/sponsor-logo/22.png';
-import logo_bronze7 from '../assets/sponsor-logo/23.png';
-import logo_material1 from '../assets/sponsor-logo/13.png';
-import logo_material2 from '../assets/sponsor-logo/14.png';
-import logo_material3 from '../assets/sponsor-logo/20.png';
-import logo_material4 from '../assets/sponsor-logo/21.png';
+import { Sponsor, sponsors } from '../assets/sponsor-logo/sponsors-helper';
 import Pdf from '../assets/sponsors-package/Sponsorship_Information.pdf';
+
+
+function Tier(tier: string, max: number, col_size: string, sponsors: Sponsor[]) {
+    // put a maximum number of sponsors per row
+    let rows = [];
+    while (sponsors.length > 0) {
+        rows.push(sponsors.splice(0, max));
+    }
+    console.log(rows);
+    // make react row 
+    return (
+        <div className="row justify-content-center text-center" style={{ marginTop: "60px" }}>
+            <h1>{tier} Sponsors</h1>
+            <hr style={{ backgroundColor: "gray", height: "4px", border: 0 }}></hr>
+            {rows.map((row, index) => {
+                return (
+                    <div className="row justify-content-center" style={{ marginBottom: "30px" }}>
+                        {row.map((sponsor, index) => {
+                            return (
+                                <div className={col_size}>
+                                    <HoverImg src={sponsor.logo} hoverText={sponsor.name} href={sponsor.link}></HoverImg>
+                                </div>
+                            );
+                        })}
+                    </div>
+                );
+            })}
+        </div>
+    );
+
+}
 
 function Sponsors() {
     // adjust the size of the sponsors' logos
@@ -34,8 +43,33 @@ function Sponsors() {
     let silver_col_size = "col-3"
     let bronze_col_size = "col-2"
     let material_col_size = "col-1"
-    // note that there should be 1 per row for platinum, 2 per row for gold, 3 per row for silver, 4 per row for bronze, and 5 per row for material
+    let plat_max = 2;
+    let gold_max = 3;
+    let silver_max = 4;
+    let bronze_max = 5;
+    let material_max = 6;
+    // if on mobile, material should be bigger
+    if (window.innerWidth < 768) {
+      plat_col_size = "col-6"
+      gold_col_size = "col-5"
+      silver_col_size = "col-4"
+      bronze_col_size = "col-3"
+      material_col_size = "col-2"
+      plat_max = 1;
+      gold_max = 2;
+      silver_max = 3;
+      bronze_max = 4;
+      material_max = 6;
+    }
 
+    
+    
+    //filter sponsors by tier and sort by name alphabetically
+    const platinum_sponsors = sponsors.filter(s => s.tier === "Platinum").sort((a, b) => a.name.localeCompare(b.name));
+    const gold_sponsors = sponsors.filter(s => s.tier === "Gold").sort((a, b) => a.name.localeCompare(b.name));
+    const silver_sponsors = sponsors.filter(s => s.tier === "Silver").sort((a, b) => a.name.localeCompare(b.name));
+    const bronze_sponsors = sponsors.filter(s => s.tier === "Bronze").sort((a, b) => a.name.localeCompare(b.name));
+    const material_sponsors = sponsors.filter(s => s.tier === "Material").sort((a, b) => a.name.localeCompare(b.name));
 
     return (
       <div
@@ -90,303 +124,24 @@ function Sponsors() {
           </button>
         </a>
 
-        {/*Diamond Class, img max width=500px*/}
 
         {/*Platinum Class*/}
-        <div
-          className="row justify-content-center text-center"
-          style={{ marginTop: class_margin_top }}
-        >
-          <h1>Platinum Sponsors</h1>
-          <hr
-            style={{ backgroundColor: "gray", height: "4px", border: 0 }}
-          ></hr>
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
-            {/*Melloul-Blamey Construction Inc.*/}
-            <div className={plat_col_size}>
-              <HoverImg
-                src={logo_plat1}
-                hoverText="Melloul-Blamey Construction Inc."
-                href="https://www.melloul.com/"
-              ></HoverImg>
-            </div>
+        {Tier("Platinum", plat_max, plat_col_size, platinum_sponsors)}
 
-            {/*Waterloo Engineering Endowment Fund */}
-            <div className={plat_col_size}>
-              <HoverImg
-                src={logo_plat2}
-                hoverText="Waterloo Engineering Endowment Fund "
-                href="https://uwaterloo.ca/engineering-endowment-foundation/"
-              ></HoverImg>
-            </div>
-          </div>
-        </div>
 
         {/*Gold Class*/}
-        <div
-          className="row justify-content-center text-center"
-          style={{ marginTop: class_margin_top }}
-        >
-          <h1>Gold Sponsors</h1>
-          <hr
-            style={{ backgroundColor: "gold", height: "4px", border: 0 }}
-          ></hr>
+        {Tier("Gold", gold_max, gold_col_size, gold_sponsors)}
 
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
-            {/*Brown & Beattie Ltd.*/}
-            <div className={gold_col_size}>
-              <HoverImg
-                src={logo_gold1}
-                hoverText="Brown & Beattie Ltd."
-                href="https://www.brownbeattie.com/"
-              ></HoverImg>
-            </div>
-            {/*CanCrete Equipment Ltd.*/}
-            <div className={gold_col_size}>
-              <HoverImg
-                src={logo_gold2}
-                hoverText="CanCrete Equipment Ltd."
-                href="https://www.cancrete.ca/"
-              ></HoverImg>
-            </div>
-            {/*Dillon Consulting*/}
-            <div className={gold_col_size}>
-              <HoverImg
-                src={logo_gold3}
-                hoverText="Dillon Consulting"
-                href="https://www.dillon.ca/"
-              ></HoverImg>
-            </div>
-          </div>
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
-            {/*GHD*/}
-            <div className={gold_col_size}>
-              <HoverImg
-                src={logo_gold4}
-                hoverText="GHD Group"
-                href="https://www.ghd.com/"
-              ></HoverImg>
-            </div>
-            {/*EBC Inc */}
-            <div className={gold_col_size}>
-              <HoverImg
-                src={logo_gold5}
-                hoverText="EBC Inc"
-                href="https://ebcinc.com/en/?doing_wp_cron=1710357869.4692909717559814453125"
-              ></HoverImg>
-            </div>
-          </div>
-        </div>
 
         {/*Silver Class*/}
-        <div
-          className="row justify-content-center text-center"
-          style={{ marginTop: class_margin_top }}
-        >
-          <h1>Silver Sponsors</h1>
-          <hr
-            style={{ backgroundColor: "silver", height: "4px", border: 0 }}
-          ></hr>
-
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
-            {/*Mansteel Rebar Ltd.*/}
-            <div className={silver_col_size}>
-              <HoverImg
-                src={logo_silver1}
-                hoverText="Mansteel Rebar Ltd."
-                href="https://ca.linkedin.com/company/mansteel-rebar?trk=public_post_follow-view-profile"
-              ></HoverImg>
-            </div>
-            {/*PCL*/}
-            <div className={silver_col_size}>
-              <HoverImg
-                src={logo_silver2}
-                hoverText="PCL Construction"
-                href="https://www.pcl.com/ca/en"
-              ></HoverImg>
-            </div>
-            {/*SOPREMA*/}
-            <div className={silver_col_size}>
-              <HoverImg
-                src={logo_silver3}
-                hoverText="SOPREMA"
-                href="https://www.soprema.ca/en/"
-              ></HoverImg>
-            </div>
-            {/*Gillam Group*/}
-            <div className={silver_col_size}>
-              <HoverImg
-                src={logo_silver4}
-                hoverText="Gillam Group"
-                href="https://gillamgroup.com"
-              ></HoverImg>
-            </div>
-          </div>
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
-            {/*Lightweight Concrete Solutions Inc. */}
-            <div className={silver_col_size}>
-              <HoverImg
-                src={logo_silver5}
-                hoverText="Lightweight Concrete Solutions Inc."
-                href="https://www.lwcsi.com"
-              ></HoverImg>
-            </div>
-          </div>
-        </div>
+        {Tier("Silver", silver_max, silver_col_size, silver_sponsors)}
 
         {/*Bronze Class*/}
-        <div
-          className="row justify-content-center text-center"
-          style={{ marginTop: class_margin_top }}
-        >
-          <h1>Bronze Sponsors</h1>
-          <hr
-            style={{
-              backgroundColor: "darkgoldenrod",
-              height: "4px",
-              border: 0,
-            }}
-          ></hr>
-
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
-            {/*Arcadis Ltd.*/}
-            <div className={bronze_col_size}>
-              <HoverImg
-                src={logo_bronze1}
-                hoverText="Arcadis"
-                href="https://www.arcadis.com/en?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=GreaterTorontoAreaCA"
-              ></HoverImg>
-            </div>
-
-            {/*GIP Ltd.*/}
-            <div className={bronze_col_size}>
-              <HoverImg
-                src={logo_bronze2}
-                hoverText="Global Infrastructure Partners Inc."
-                href="https://gipi.com/"
-              ></HoverImg>
-            </div>
-
-            {/*MTE Consultants Inc. */}
-            <div className={bronze_col_size}>
-              <HoverImg
-                src={logo_bronze3}
-                hoverText="MTE Consultants Inc."
-                href="https://www.mte85.com/"
-              ></HoverImg>
-            </div>
-
-            {/*Alberici Constructors Ltd.*/}
-            <div className={bronze_col_size}>
-              <HoverImg
-                src={logo_bronze4}
-                hoverText="Alberici Constructors Ltd."
-                href="https://alberici.com/"
-              ></HoverImg>
-            </div>
-
-            {/*EngSoc */}
-            <div className={bronze_col_size}>
-              <HoverImg
-                src={logo_bronze5}
-                hoverText="EngSoc"
-                href="https://www.engsoc.uwaterloo.ca"
-              ></HoverImg>
-            </div>
-          </div>
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
-            {/*Lafarge */}
-            <div className={bronze_col_size}>
-              <HoverImg
-                src={logo_bronze6}
-                hoverText="Lafarge"
-                href="https://www.lafarge.ca/en"
-              ></HoverImg>
-            </div>
-
-            {/*Edison Engineers Inc */}
-            <div className={bronze_col_size}>
-              <HoverImg
-                src={logo_bronze7}
-                hoverText="Edison Engineers Inc."
-                href="https://edisonengineers.ca"
-              ></HoverImg>
-            </div>
-          </div>
-        </div>
+        {Tier("Bronze", bronze_max, bronze_col_size, bronze_sponsors)}
 
         {/*Material Class*/}
-        <div
-          className="row justify-content-center text-center"
-          style={{ marginTop: class_margin_top }}
-        >
-          <h1>Material Sponsors</h1>
-          <hr
-            style={{ backgroundColor: "black", height: "4px", border: 0 }}
-          ></hr>
+        {Tier("Material", material_max, material_col_size, material_sponsors)}
 
-          <div
-            className="row justify-content-center"
-            style={{ marginBottom: "30px" }}
-          >
-            {/*Master Builders Solutions Canada Inc. */}
-            <div className={material_col_size}>
-              <HoverImg
-                src={logo_material1}
-                hoverText="Master Builders Solutions Canada Inc."
-                href="https://www.master-builders-solutions.com/en-us"
-              ></HoverImg>
-            </div>
-
-            {/*rainfresh*/}
-            <div className={material_col_size}>
-              <HoverImg
-                src={logo_material2}
-                hoverText="Rainfresh"
-                href="https://rainfresh.ca/"
-              ></HoverImg>
-            </div>
-
-            {/*sika*/}
-            <div className={material_col_size}>
-              <HoverImg
-                src={logo_material3}
-                hoverText="Sika"
-                href="https://can.sika.com/"
-              ></HoverImg>
-            </div>
-
-            {/*st marys cement*/}
-            <div className={material_col_size}>
-              <HoverImg
-                src={logo_material4}
-                hoverText="St Mary's Cement"
-                href="https://www.stmaryscement.com/"
-              ></HoverImg>
-            </div>
-          </div>
-        </div>
       </div>
     );
 }
