@@ -4,14 +4,24 @@ To update the website, it is easiest to make changes directly on GitHub by using
 
 GitHub will calls these changes a "commit" and will prompt you for a commit description, fill these fields to your liking. After adding your description select the `Commit directly to the main branch` option and press `Commit changes`
 
-## Joining Form
+## Sponsors
 
-1. Look at the embed information for the new form. To avoid formatting and other issues, copy only the **src="link"** field from the embed info
-2. navigate to `src/pages/Join.tsx`. On line 11 (shown below), replace the src="link" field with the new value
+1. Add correctly sized logo to `src/assets/sponsor-logo`. For convention name the file as `{num}.png`
+2. In `src/assets/sponsor-logo/sponsors-helper.ts`, add the new image as another import. It's best to follow the same convention for naming the photo with its tier. Use the same filename from step 1 in the quotations
 
-```tsx
-<iframe width="640px" height="600px" title="join-form" src="https://forms.office.com/Pages/ResponsePage.aspx?id=h1o6cprzIkqSRz_CQMATlnO8OjhqoIRIvJhMsNGBHK5UMDlIU0VNVTdMSTVMTTlCRThNNlo4R0FISy4u&embed=true" style={{border: "none", maxWidth: "100%", maxHeight: "100vh"}}> </iframe>
+```ts
+import logo_silver6 from './24.png';
 ```
+3. In the sponsors list, add another entry with the information of your new sponsor
+```ts
+    {
+        tier: "Silver",
+        name: "My New Silver Company",
+        logo: logo_silver6,
+        link: "https://mylink.com"
+    },
+```
+
 
 ## Past Canoes
 
