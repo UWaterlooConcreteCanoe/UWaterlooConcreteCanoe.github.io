@@ -35,7 +35,6 @@ import gallery_33 from '../assets/gallery/gallery_033.jpg';
 import gallery_34 from '../assets/gallery/gallery_034.jpg';
 import gallery_35 from '../assets/gallery/gallery_035.jpg';
 import gallery_36 from '../assets/gallery/gallery_036.jpg';
-import CarouselItem from "../components/CarouselItem";
 const num_per_row = 5;
 const gallery_items = [
   gallery_1,
