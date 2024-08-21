@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 import Logo from "./assets/ConcreteCanoeLogoImage.png";
+import { Toaster } from 'react-hot-toast';
 // TODO: uncomment once transparent sponsor logos are added
 // import { sponsors } from './assets/sponsor-logo/sponsors-helper';
 // import CarouselItem from "./components/CarouselItem";
@@ -82,6 +83,7 @@ function Footer() {
 function App() {
   return (
     <div className="App" style={{ overflowX: "hidden" }}>
+      <Toaster />
       <header className="App-header">
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
           <div className="d-flex justify-content-between">
