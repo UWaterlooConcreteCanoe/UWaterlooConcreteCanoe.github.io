@@ -1,5 +1,4 @@
 import React from "react";
-import { InstagramEmbed } from 'react-social-media-embed';
 import gallery_1 from '../assets/gallery/gallery_001.jpg';
 import gallery_2 from '../assets/gallery/gallery_002.jpg';
 import gallery_3 from '../assets/gallery/gallery_003.jpg';
@@ -121,12 +120,6 @@ function Media() {
           className="row justify-content-center text-center px-5"
           style={{ marginBottom: "1.5%" }}
         ></div>
-
-
-        <div className="row justify-content-center text-center" style={{marginTop: "75px", marginBottom: "1.5%"}}><h1>Instagram Feed</h1></div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <InstagramEmbed url="https://www.instagram.com/uwaterlooconcreteteam/" width={"100%"} />
-        </div>
       </div>
     );
 }
