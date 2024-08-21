@@ -11,6 +11,7 @@ import PastCanoes from './pages/PastCanoes';
 import Contact from './pages/Contact';
 import Media from './pages/Media';
 import Subteams from './pages/Subteams';
+import "./index.css";
 
 const router = createHashRouter([
   {
