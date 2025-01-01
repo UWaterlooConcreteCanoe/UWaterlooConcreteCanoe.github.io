@@ -27,7 +27,7 @@ function Home() {
               scrollRef.current.scrollTop = backupHeight + (scroll % height);
           }
       }
-  }, [height]);
+  }, [height, backupHeight]);
 
   return (
     <div className='tw-my-[7.5vh]'>
