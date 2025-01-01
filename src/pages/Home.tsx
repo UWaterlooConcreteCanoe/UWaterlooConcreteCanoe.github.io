@@ -1,12 +1,12 @@
-import logo from '../assets/ConcreteCanoeLogoImage.png';
+// import logo from '../assets/ConcreteCanoeLogoImage.png';
 import headImage from '../assets/ConcreteCanoeHeadImage-crop.jpg';
 import { useCallback, useRef, useState } from 'react';
 import { InfiniteScrollBanner } from '../components/InfiniteScrollBanner';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 
 // import required modules
-import { Navigation } from 'swiper/modules';
+// import { Navigation } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -17,22 +17,22 @@ function Home() {
 
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const [height, setHeight] = useState(0);
+  const [height, _] = useState(0);
   const backupHeight = height * 4;
 
-  const infiniteScroll = useCallback(() => {
-      if (scrollRef.current) {
-          const scroll = scrollRef.current.scrollTop;
-          if (scroll < backupHeight || scroll >= backupHeight + height) {
-              scrollRef.current.scrollTop = backupHeight + (scroll % height);
-          }
-      }
-  }, [height, backupHeight]);
+  // const infiniteScroll = useCallback(() => {
+  //     if (scrollRef.current) {
+  //         const scroll = scrollRef.current.scrollTop;
+  //         if (scroll < backupHeight || scroll >= backupHeight + height) {
+  //             scrollRef.current.scrollTop = backupHeight + (scroll % height);
+  //         }
+  //     }
+  // }, [height, backupHeight]);
 
   return (
     <div className='tw-my-[7.5vh]'>
       <div className="tw-overflow-hidden tw-h-[70dvh] tw-w-full">
-        <img src={headImage} alt="Background Image" className="tw-object-cover tw-w-full tw-h-full" />
+        <img src={headImage} alt="Background" className="tw-object-cover tw-w-full tw-h-full" />
         <div className="tw-absolute tw-text-white tw-text-6xl tw-font-bold tw-w-full tw-top-[15dvh] tw-text-center sm:tw-pl-[30dvw] md:tw-pl-[50dvw]">University of Waterloo Concrete Canoe Team</div>
       </div>
       <div className="tw-flex tw-w-full tw-bg-amber-300 sm:tw-px-[10dvw] tw-items-center tw-text-center tw-justify-center">
@@ -53,10 +53,10 @@ function Home() {
         </div>
         <div className='tw-flex tw-flex-col sm:tw-flex-row tw-flex-1 sm:tw-space-x-4 tw-items-center tw-text-left tw-justify-center'>
           <div className='tw-flex tw-flex-col tw-space-y-4'>
-            <img className='tw-h-32' src="https://picsum.photos/128/78"/>
-            <img className='tw-h-28' src="https://picsum.photos/128/56"/>
+            <img className='tw-h-32' src="https://picsum.photos/128/78" alt="Placeholder"/>
+            <img className='tw-h-28' src="https://picsum.photos/128/56" alt="Placeholder"/>
           </div>
-          <img className='tw-h-64 tw-mt-4 sm:tw-mt-0' src="https://picsum.photos/128/128"/>
+          <img className='tw-h-64 tw-mt-4 sm:tw-mt-0' src="https://picsum.photos/128/128" alt="Placeholder"/>
         </div>
       </div>
       <div className="tw-w-full tw-bg-amber-300 tw-items-center tw-text-left tw-justify-center tw-py-10">
@@ -78,7 +78,7 @@ function Home() {
           {Array.from(Array(9).keys()).map(e=><SwiperSlide><div className='tw-flex tw-w-full tw-h-full tw-items-center tw-justify-center'><img className="tw-w-[33dvw]" key={e} src={`https://picsum.photos/seed/${Math.random()}/200/256`} /></div></SwiperSlide>)}
         </Swiper> */}
         <Carousel
-          items={Array.from(Array(9).keys()).map(e=><div><div className='tw-flex tw-w-full tw-h-full tw-items-center tw-justify-center'><img className="tw-w-[33dvw]" key={e} src={`https://picsum.photos/seed/${Math.random()}/200/256`} /></div></div>)}
+          items={Array.from(Array(9).keys()).map(e=><div><div className='tw-flex tw-w-full tw-h-full tw-items-center tw-justify-center'><img className="tw-w-[33dvw]" key={e} src={`https://picsum.photos/seed/${Math.random()}/200/256`} alt="Placeholder" /></div></div>)}
         />
       </div>
       <div className="tw-w-full tw-bg-white tw-items-center tw-text-left tw-justify-center tw-px-10 tw-pt-8">

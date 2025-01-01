@@ -1,4 +1,4 @@
-import { HTMLFactory, ReactNode } from "react";
+import { ReactNode } from "react";
 
 export default function Carousel(props: {items : ReactNode[]}) {
   // carousel of logos
