@@ -1,6 +1,5 @@
 // import logo from '../assets/ConcreteCanoeLogoImage.png';
 import headImage from '../assets/ConcreteCanoeHeadImage-crop.jpg';
-import { useCallback, useRef, useState } from 'react';
 import { InfiniteScrollBanner } from '../components/InfiniteScrollBanner';
 // Import Swiper React components
 // import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,20 +13,6 @@ import 'swiper/css/navigation';
 import Carousel from '../components/Carousel';
 
 function Home() {
-
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  const [height, _] = useState(0);
-  const backupHeight = height * 4;
-
-  // const infiniteScroll = useCallback(() => {
-  //     if (scrollRef.current) {
-  //         const scroll = scrollRef.current.scrollTop;
-  //         if (scroll < backupHeight || scroll >= backupHeight + height) {
-  //             scrollRef.current.scrollTop = backupHeight + (scroll % height);
-  //         }
-  //     }
-  // }, [height, backupHeight]);
 
   return (
     <div className='tw-my-[7.5vh]'>
