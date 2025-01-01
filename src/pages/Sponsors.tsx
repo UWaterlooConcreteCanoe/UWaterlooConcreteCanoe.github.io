@@ -37,11 +37,13 @@ function Tier(tier: string, max: number, col_size: string, sponsors: Sponsor[]) 
 
 function Sponsors() {
     // adjust the size of the sponsors' logos
+    let diamond_col_size = "col-12"
     let plat_col_size = "col-5"
     let gold_col_size = "col-4"
     let silver_col_size = "col-3"
     let bronze_col_size = "col-2"
     let material_col_size = "col-1"
+    let diamond_max = 1;
     let plat_max = 2;
     let gold_max = 3;
     let silver_max = 4;
@@ -49,11 +51,13 @@ function Sponsors() {
     let material_max = 6;
     // if on mobile, material should be bigger
     if (window.innerWidth < 768) {
+      diamond_col_size = "col-12"
       plat_col_size = "col-6"
       gold_col_size = "col-5"
       silver_col_size = "col-4"
       bronze_col_size = "col-3"
       material_col_size = "col-2"
+      diamond_max = 1;
       plat_max = 1;
       gold_max = 2;
       silver_max = 3;
@@ -64,6 +68,7 @@ function Sponsors() {
     
     
     //filter sponsors by tier and sort by name alphabetically
+    const diamond_sponsors = sponsors.filter(s => s.tier === "Diamond").sort((a, b) => a.name.localeCompare(b.name));
     const platinum_sponsors = sponsors.filter(s => s.tier === "Platinum").sort((a, b) => a.name.localeCompare(b.name));
     const gold_sponsors = sponsors.filter(s => s.tier === "Gold").sort((a, b) => a.name.localeCompare(b.name));
     const silver_sponsors = sponsors.filter(s => s.tier === "Silver").sort((a, b) => a.name.localeCompare(b.name));
@@ -123,14 +128,14 @@ function Sponsors() {
           </button>
         </a>
 
+        {/*Diamond Class*/}
+        {Tier("Diamond", diamond_max, diamond_col_size, diamond_sponsors)}
 
         {/*Platinum Class*/}
         {Tier("Platinum", plat_max, plat_col_size, platinum_sponsors)}
 
-
         {/*Gold Class*/}
         {Tier("Gold", gold_max, gold_col_size, gold_sponsors)}
-
 
         {/*Silver Class*/}
         {Tier("Silver", silver_max, silver_col_size, silver_sponsors)}
