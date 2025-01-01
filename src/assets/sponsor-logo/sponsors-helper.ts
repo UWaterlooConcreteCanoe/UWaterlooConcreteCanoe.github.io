@@ -15,7 +15,7 @@ import oakcrete from './oakcrete.png';
 import civicon from './civicon.png';
 import terrapex from './terrapex.png';
 import baconsulting from './baconsulting.png';
-// import facca from './facca.png';
+import facca from './facca.png';
 
 export interface Sponsor {
     tier: string;
@@ -127,10 +127,10 @@ export const sponsors: Sponsor[] = [
         logo: baconsulting,
         link: "https://www.bagroup.com"
     },
-    // {
-    //     tier: "Material",
-    //     name: "Facca Incorporated",
-    //     logo: facca,
-    //     link: "https://www.facca.com"
-    // }
+    {
+        tier: "Material",
+        name: "Facca Incorporated",
+        logo: facca,
+        link: "https://www.facca.com"
+    }
 ];
