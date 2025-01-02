@@ -11,7 +11,7 @@ const InfiniteScrollBanner = (props: { images : string[], speed : number }) => {
         <section className="tw-flex tw-space-x-2" style={{ "--speed": `${speed}ms` }}>
           {props.images.map((image, id) => (
             <div key={id}>
-              <img src={image} />
+              <img src={image} alt="logo" />
             </div>
           ))}
         </section>
@@ -19,7 +19,7 @@ const InfiniteScrollBanner = (props: { images : string[], speed : number }) => {
         <section className="tw-flex tw-space-x-2" style={{ "--speed": `${speed}ms` }}>
           {props.images.map((image, id) => (
             <div key={id}>
-              <img src={image} />
+              <img src={image} alt="logo" />
             </div>
           ))}
         </section>
@@ -27,7 +27,7 @@ const InfiniteScrollBanner = (props: { images : string[], speed : number }) => {
         <section className="tw-flex tw-space-x-2" style={{ "--speed": `${speed}ms` }}>
           {props.images.map((image, id) => (
             <div key={id}>
-              <img src={image} />
+              <img src={image} alt="logo" />
             </div>
           ))}
         </section>
