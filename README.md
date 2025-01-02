@@ -6,8 +6,8 @@ GitHub will calls these changes a "commit" and will prompt you for a commit desc
 
 ## Sponsors
 
-1. Add correctly sized logo to `src/assets/sponsor-logo`. For convention name the file as `{num}.png`
-2. In `src/assets/sponsor-logo/sponsors-helper.ts`, add the new image as another import. It's best to follow the same convention for naming the photo with its tier. Use the same filename from step 1 in the quotations
+1. Add correctly sized logo to `src/assets/sponsor-logo`. For convention name the file as `sponsor.png`
+2. In `src/assets/sponsor-logo/sponsors-helper.ts`, add the new image as another import. It's best to follow the same convention for naming the photo with its sponsor. Use the same filename from step 1 in the quotations
 
 ```ts
 import logo_silver6 from './24.png';
