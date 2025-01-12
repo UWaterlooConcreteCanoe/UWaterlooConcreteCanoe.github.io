@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a795cefb.css",
-    "main.js": "/static/js/main.ab4b6cc8.js",
+    "main.js": "/static/js/main.89938d25.js",
     "static/js/787.e371f496.chunk.js": "/static/js/787.e371f496.chunk.js",
     "static/media/gallery_019.jpg": "/static/media/gallery_019.bfe09bf493291ae93c45.jpg",
     "static/media/gallery_022.jpg": "/static/media/gallery_022.c248c27d5d8681b815e0.jpg",
@@ -39,7 +39,6 @@
     "static/media/gallery_026.jpg": "/static/media/gallery_026.9b1d1a9992f1e670ca4a.jpg",
     "static/media/gallery_031.jpg": "/static/media/gallery_031.9e2b37689ee30bf46b0c.jpg",
     "static/media/ConcreteCanoeHeadImage-crop.jpg": "/static/media/ConcreteCanoeHeadImage-crop.c463f9cdfa837476297c.jpg",
-    "static/media/Sponsorship_Information.pdf": "/static/media/Sponsorship_Information.0097c791a99d13ba0198.pdf",
     "static/media/2016.jpg": "/static/media/2016.6d0c23b25af972c21af1.jpg",
     "static/media/2015.jpg": "/static/media/2015.b134b32e09e35a0d8db5.jpg",
     "static/media/2021.jpg": "/static/media/2021.e6bfd8ebe19ca4fc8cd7.jpg",
@@ -47,6 +46,7 @@
     "static/media/2019.jpg": "/static/media/2019.332497263a66e109764a.jpg",
     "static/media/2018.jpg": "/static/media/2018.523aa75ea73474fdd464.jpg",
     "static/media/2022.jpg": "/static/media/2022.284c964d6fdd891c9a04.jpg",
+    "static/media/Sponsorship_Information.pdf": "/static/media/Sponsorship_Information.584533580e33308c8f41.pdf",
     "static/media/gallery_036.jpg": "/static/media/gallery_036.d79d6953fd1309fb4a60.jpg",
     "static/media/weef.png": "/static/media/weef.a3d2d6f1c204b5d88540.png",
     "static/media/engsoc.png": "/static/media/engsoc.dba5556cc2d5feb9c5e2.png",
@@ -69,11 +69,11 @@
     "static/media/mte.png": "/static/media/mte.043362014da31ae80336.png",
     "index.html": "/index.html",
     "main.a795cefb.css.map": "/static/css/main.a795cefb.css.map",
-    "main.ab4b6cc8.js.map": "/static/js/main.ab4b6cc8.js.map",
+    "main.89938d25.js.map": "/static/js/main.89938d25.js.map",
     "787.e371f496.chunk.js.map": "/static/js/787.e371f496.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a795cefb.css",
-    "static/js/main.ab4b6cc8.js"
+    "static/js/main.89938d25.js"
   ]
 }
