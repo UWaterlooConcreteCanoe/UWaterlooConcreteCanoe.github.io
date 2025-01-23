@@ -1,6 +1,31 @@
 // import logo from '../assets/ConcreteCanoeLogoImage.png';
-import headImage from '../assets/ConcreteCanoeHeadImage-crop.jpg';
+import headImage from '../assets/home-page/TitleBackground.jpg';
+
+import aboutUs0 from '../assets/home-page/mix_mixer4.jpg';
+import aboutUs1 from '../assets/home-page/place_3rd_layer_(blue)4.jpg';
+import aboutUs2 from '../assets/home-page/FullWoodenFormAssembledYogaMatFitting.jpg';
+
+import carouselTeams0 from '../assets/home-page/carousel-teams/carousel0.jpg'
+import carouselTeams1 from '../assets/home-page/carousel-teams/carousel1.jpg'
+import carouselTeams2 from '../assets/home-page/carousel-teams/carousel2.jpg'
+import carouselTeams3 from '../assets/home-page/carousel-teams/carousel3.jpg'
+import carouselTeams4 from '../assets/home-page/carousel-teams/carousel4.jpg'
+import carouselTeams5 from '../assets/home-page/carousel-teams/carousel5.jpg'
+import carouselTeams6 from '../assets/home-page/carousel-teams/carousel6.jpg'
+import carouselTeams7 from '../assets/home-page/carousel-teams/carousel7.jpg'
+import carouselTeams8 from '../assets/home-page/carousel-teams/carousel8.jpg'
+import carouselTeams9 from '../assets/home-page/carousel-teams/carousel9.jpg'
+import carouselTeams10 from '../assets/home-page/carousel-teams/carousel10.jpg'
+import carouselTeams11 from '../assets/home-page/carousel-teams/carousel11.jpg'
+import carouselTeams12 from '../assets/home-page/carousel-teams/carousel12.jpg'
+import carouselTeams13 from '../assets/home-page/carousel-teams/carousel13.jpg'
+import carouselTeams14 from '../assets/home-page/carousel-teams/carousel14.jpg'
+import carouselTeams15 from '../assets/home-page/carousel-teams/carousel15.jpg'
+import carouselTeams16 from '../assets/home-page/carousel-teams/carousel16.jpg'
+
 import { InfiniteScrollBanner } from '../components/InfiniteScrollBanner';
+import { sponsors } from '../assets/sponsor-logo/sponsors-helper';
+
 // Import Swiper React components
 // import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -12,13 +37,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import Carousel from '../components/Carousel';
 
+const carouselTeamsImages = [
+  carouselTeams0, carouselTeams1, carouselTeams2, carouselTeams3, carouselTeams4, carouselTeams5,
+  carouselTeams6, carouselTeams7, carouselTeams8, carouselTeams9, carouselTeams10, carouselTeams11,
+  carouselTeams12, carouselTeams13, carouselTeams14, carouselTeams15, carouselTeams16
+]
+
 function Home() {
 
   return (
     <div className='tw-my-[7.5vh]'>
       <div className="tw-overflow-hidden tw-h-[70dvh] tw-w-full">
         <img src={headImage} alt="Background" className="tw-object-cover tw-w-full tw-h-full" />
-        <div className="tw-absolute tw-text-white tw-text-6xl tw-font-bold tw-w-full tw-top-[15dvh] tw-text-center sm:tw-pl-[30dvw] md:tw-pl-[50dvw]">University of Waterloo Concrete Canoe Team</div>
+        <div className="tw-absolute tw-text-yellow-300 tw-text-6xl tw-font-bold tw-w-full tw-top-[15dvh] tw-text-center sm:tw-pl-[30dvw] md:tw-pl-[50dvw]">University of Waterloo Concrete Canoe Team</div>
       </div>
       <div className="tw-flex tw-w-full tw-bg-amber-300 sm:tw-px-[10dvw] tw-items-center tw-text-center tw-justify-center">
         <p className="tw-text-xl tw-text-neutral-800 tw-p-10">
@@ -32,16 +63,15 @@ function Home() {
             About Us
           </h1>
           <p className="tw-text-xl tw-text-neutral-800">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-            Thanks to our sponsers and the university and stuff!!!!
+            We are the Concrete Canoe Team. We design a canoe out of concrete. Yeah, it floats sometimes.
           </p>
         </div>
         <div className='tw-flex tw-flex-col sm:tw-flex-row tw-flex-1 sm:tw-space-x-4 tw-items-center tw-text-left tw-justify-center'>
-          <div className='tw-flex tw-flex-col tw-space-y-4'>
-            <img className='tw-h-32' src="https://picsum.photos/128/78" alt="Placeholder"/>
-            <img className='tw-h-28' src="https://picsum.photos/128/56" alt="Placeholder"/>
+          <div className='tw-flex tw-flex-col tw-space-y-2'>
+            <img className='tw-h-32' src={aboutUs0} alt="Placeholder"/>
+            <img className='tw-h-32' src={aboutUs1} alt="Placeholder"/>
           </div>
-          <img className='tw-h-64 tw-mt-4 sm:tw-mt-0' src="https://picsum.photos/128/128" alt="Placeholder"/>
+          <img className='tw-h-[16.5rem] tw-mt-4 sm:tw-mt-0' src={aboutUs2} alt="Placeholder"/>
         </div>
       </div>
       <div className="tw-w-full tw-bg-amber-300 tw-items-center tw-text-left tw-justify-center tw-py-10">
@@ -63,7 +93,7 @@ function Home() {
           {Array.from(Array(9).keys()).map(e=><SwiperSlide><div className='tw-flex tw-w-full tw-h-full tw-items-center tw-justify-center'><img className="tw-w-[33dvw]" key={e} src={`https://picsum.photos/seed/${Math.random()}/200/256`} /></div></SwiperSlide>)}
         </Swiper> */}
         <Carousel
-          items={Array.from(Array(9).keys()).map(e=><div><div className='tw-flex tw-w-full tw-h-full tw-items-center tw-justify-center'><img className="tw-w-[33dvw]" key={e} src={`https://picsum.photos/seed/${Math.random()}/200/256`} alt="Placeholder" /></div></div>)}
+          items={carouselTeamsImages.map((carouselImg, index) => <div><div className='tw-flex tw-w-full tw-h-full tw-items-center tw-justify-center'><img className="tw-w-[33dvw]" key={index} src={carouselImg} alt="Placeholder" /></div></div>)}
         />
       </div>
       <div className="tw-w-full tw-bg-white tw-items-center tw-text-left tw-justify-center tw-px-10 tw-pt-8">
@@ -71,7 +101,7 @@ function Home() {
           Our Sponsors
         </h1>
       </div>
-      <InfiniteScrollBanner images={Array.from(Array(32).keys()).map(e=>`https://picsum.photos/${Math.round(Math.random() * 64 + 64)}/64`)} speed={25000} />
+      <InfiniteScrollBanner images={sponsors.map(sponsor => sponsor.logo)} speed={25000} />
     </div>
   );
 }
