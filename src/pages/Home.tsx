@@ -49,7 +49,7 @@ function Home() {
     <div className='tw-my-[7.5vh]'>
       <div className="tw-overflow-hidden tw-h-[70dvh] tw-w-full">
         <img src={headImage} alt="Background" className="tw-object-cover tw-w-full tw-h-full" />
-        <div className="tw-absolute tw-text-yellow-300 tw-text-6xl tw-font-bold tw-w-full tw-top-[15dvh] tw-text-center sm:tw-pl-[30dvw] md:tw-pl-[50dvw]">University of Waterloo Concrete Canoe Team</div>
+        <div className="tw-absolute tw-text-yellow-300 tw-text-6xl tw-font-bold tw-w-full tw-top-[15dvh] tw-text-center sm:tw-pl-[30dvw] md:tw-pl-[50dvw] tw-drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">University of Waterloo Concrete Canoe Team</div>
       </div>
       <div className="tw-flex tw-w-full tw-bg-amber-300 sm:tw-px-[10dvw] tw-items-center tw-text-center tw-justify-center">
         <p className="tw-text-xl tw-text-neutral-800 tw-p-10">
