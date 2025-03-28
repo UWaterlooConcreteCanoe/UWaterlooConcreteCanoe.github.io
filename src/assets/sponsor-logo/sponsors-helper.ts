@@ -16,6 +16,9 @@ import civicon from './civicon.png';
 import terrapex from './terrapex.png';
 import baconsulting from './baconsulting.png';
 import facca from './facca.png';
+import ebc from './ebc.png';
+import cancrete from './cancrete.png';
+import chandos from './chandos.png';
 
 export interface Sponsor {
     tier: string;
@@ -132,5 +135,23 @@ export const sponsors: Sponsor[] = [
         name: "Facca Incorporated",
         logo: facca,
         link: "https://www.facca.com"
+    },
+    {
+        tier: "Gold",
+        name: "EBC Inc",
+        logo: ebc,
+        link: "https://ebcinc.com/en/"
+    },
+    {
+        tier: "Gold",
+        name: "CanCrete Equipment Ltd.",
+        logo: cancrete,
+        link: "https://www.cancrete.ca/"
+    },
+    {
+        tier: "Bronze",
+        name: "Chandos Construction",
+        logo: chandos,
+        link: "https://www.chandos.com/"
     }
 ];
