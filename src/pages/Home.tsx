@@ -53,8 +53,9 @@ function Home() {
       </div>
       <div className="tw-flex tw-w-full tw-bg-amber-300 sm:tw-px-[10dvw] tw-items-center tw-text-center tw-justify-center">
         <p className="tw-text-xl tw-text-neutral-800 tw-p-10">
-          For the last 29 years, Canadian universities are building concrete canoes and are evaluated on academic, technical and sports aspects.
-          The competition offers the opportunity to engineering students to apply theories and concepts learned in class through a challenging project.
+        For the last 30 years, Canadian universities have been building concrete canoes evaluated on academic, technical, and paddling aspects. 
+        The competition offers the opportunity for students to apply theories and concepts learned in class through a formidable engineering design challenge. 
+        Additionally, students gain experiential knowledge and skills through hands-on opportunities.  
         </p>
       </div>
       <div className="lg:tw-flex tw-w-full tw-bg-white tw-items-center tw-text-left tw-justify-center tw-p-10 lg:tw-space-x-10">
@@ -63,7 +64,9 @@ function Home() {
             About Us
           </h1>
           <p className="tw-text-xl tw-text-neutral-800">
-            We are the Concrete Canoe Team. We design a canoe out of concrete. Yeah, it floats sometimes.
+            The University of Waterloo’s Concrete Canoe Team is a group of approximately 50 students who design, build, and race a concrete canoe each year at the Canadian National Concrete Canoe Competition. 
+            We design low density concrete and hull shape, develop construction methodology, execute structural analysis, utilize industry project management techniques, and train to become better paddlers. 
+            The team strives to be a fun environment that supports student learning and provides technical skills to help students achieve their career goals. 
           </p>
         </div>
         <div className='tw-flex tw-flex-col sm:tw-flex-row tw-flex-1 sm:tw-space-x-4 tw-items-center tw-text-left tw-justify-center'>
