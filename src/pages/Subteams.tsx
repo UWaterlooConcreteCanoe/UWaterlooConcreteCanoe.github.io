@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 
 interface SubteamsProps {
     name: string;
@@ -45,7 +46,11 @@ const subteams: SubteamsProps[] = [
 ]
 
 function Subteams() {
-    const [selectedSubteam, setSelectedSubteam] = useState<SubteamsProps>(subteams[0]);
+
+    // Make it possible to set the state (subteam selected) on load with a param.
+    const [subteamId, setSubteamId] = useSearchParams();
+
+    const [selectedSubteam, setSelectedSubteam] = useState<SubteamsProps>(subteams[subteamId.get("team") ? parseInt(subteamId.get("team")!.toString()) : 0]);
 
     return (
         <div className="About" style={{marginTop: "30px", padding: "10%", alignContent: "center", minHeight: "80vh"}}>

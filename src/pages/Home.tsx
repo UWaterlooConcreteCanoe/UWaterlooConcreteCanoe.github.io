@@ -5,26 +5,9 @@ import aboutUs0 from '../assets/home-page/mix_mixer4.jpg';
 import aboutUs1 from '../assets/home-page/place_3rd_layer_(blue)4.jpg';
 import aboutUs2 from '../assets/home-page/FullWoodenFormAssembledYogaMatFitting.jpg';
 
-import carouselTeams0 from '../assets/home-page/carousel-teams/carousel0.jpg'
-import carouselTeams1 from '../assets/home-page/carousel-teams/carousel1.jpg'
-import carouselTeams2 from '../assets/home-page/carousel-teams/carousel2.jpg'
-import carouselTeams3 from '../assets/home-page/carousel-teams/carousel3.jpg'
-import carouselTeams4 from '../assets/home-page/carousel-teams/carousel4.jpg'
-import carouselTeams5 from '../assets/home-page/carousel-teams/carousel5.jpg'
-import carouselTeams6 from '../assets/home-page/carousel-teams/carousel6.jpg'
-import carouselTeams7 from '../assets/home-page/carousel-teams/carousel7.jpg'
-import carouselTeams8 from '../assets/home-page/carousel-teams/carousel8.jpg'
-import carouselTeams9 from '../assets/home-page/carousel-teams/carousel9.jpg'
-import carouselTeams10 from '../assets/home-page/carousel-teams/carousel10.jpg'
-import carouselTeams11 from '../assets/home-page/carousel-teams/carousel11.jpg'
-import carouselTeams12 from '../assets/home-page/carousel-teams/carousel12.jpg'
-import carouselTeams13 from '../assets/home-page/carousel-teams/carousel13.jpg'
-import carouselTeams14 from '../assets/home-page/carousel-teams/carousel14.jpg'
-import carouselTeams15 from '../assets/home-page/carousel-teams/carousel15.jpg'
-import carouselTeams16 from '../assets/home-page/carousel-teams/carousel16.jpg'
-
 import { InfiniteScrollBanner } from '../components/InfiniteScrollBanner';
 import { sponsors } from '../assets/sponsor-logo/sponsors-helper';
+import { carouselTeams } from '../assets/home-page/carousel-teams/carousel-helper';
 
 // Import Swiper React components
 // import { Swiper, SwiperSlide } from 'swiper/react';
@@ -36,12 +19,7 @@ import { sponsors } from '../assets/sponsor-logo/sponsors-helper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Carousel from '../components/Carousel';
-
-const carouselTeamsImages = [
-  carouselTeams0, carouselTeams1, carouselTeams2, carouselTeams3, carouselTeams4, carouselTeams5,
-  carouselTeams6, carouselTeams7, carouselTeams8, carouselTeams9, carouselTeams10, carouselTeams11,
-  carouselTeams12, carouselTeams13, carouselTeams14, carouselTeams15, carouselTeams16
-]
+import HoverImg from '../components/HoverImg';
 
 function Home() {
 
@@ -96,7 +74,7 @@ function Home() {
           {Array.from(Array(9).keys()).map(e=><SwiperSlide><div className='tw-flex tw-w-full tw-h-full tw-items-center tw-justify-center'><img className="tw-w-[33dvw]" key={e} src={`https://picsum.photos/seed/${Math.random()}/200/256`} /></div></SwiperSlide>)}
         </Swiper> */}
         <Carousel
-          items={carouselTeamsImages.map((carouselImg, index) => <div><div className='tw-flex tw-w-full tw-h-full tw-items-center tw-justify-center'><img className="tw-w-[33dvw]" key={index} src={carouselImg} alt="Placeholder" /></div></div>)}
+          items={carouselTeams.map((carouselTeam, index) => <div><div className='tw-flex tw-w-full tw-h-full tw-items-center tw-justify-center'><div className="tw-w-[33dvw]"><HoverImg key={index} src={carouselTeam.image} hoverText={carouselTeam.name} href={carouselTeam.link}></HoverImg></div></div></div>)}
         />
       </div>
       <div className="tw-w-full tw-bg-white tw-items-center tw-text-left tw-justify-center tw-px-10 tw-pt-8">

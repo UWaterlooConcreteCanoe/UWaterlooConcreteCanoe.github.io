@@ -3,11 +3,11 @@ import weef from './weef.png';
 import ghd from './ghd.png';
 import pcl from './pcl.png';
 import gillam from './gillam.png';
-import lightweight from './lightweight.png';
+import leaconsulting from './leaconsulting.png';
 import mte from './mte.png';
 import engsoc from './engsoc.png';
 import edison from './edison.png';
-import lafarge from './lafarge.png';
+import amrize from './amrize.png';
 import masterbuilders from './masterbuilders.png';
 import sika from './sika.png';
 import stmary from './stmary.png';
@@ -59,12 +59,6 @@ export const sponsors: Sponsor[] = [
         link: "https://gillamgroup.com"
     },
     {
-        tier: "Silver",
-        name: "Lightweight Concrete Solutions Inc.",
-        logo: lightweight,
-        link: "https://www.lwcsi.com"
-    },
-    {
         tier: "Bronze",
         name: "MTE Consultants Inc.",
         logo: mte,
@@ -78,9 +72,15 @@ export const sponsors: Sponsor[] = [
     },
     {
         tier: "Bronze",
-        name: "Lafarge",
-        logo: lafarge,
-        link: "https://www.lafarge.ca/en"
+        name: "Amrize",
+        logo: amrize,
+        link: "https://www.amrize.com/us/en/amrize-homepage.html"
+    },
+    {
+        tier: "Bronze",
+        name: "Lea Consulting Ltd.",
+        logo: leaconsulting,
+        link: "https://www.lea.ca/"
     },
     {
         tier: "Bronze",
@@ -88,17 +88,17 @@ export const sponsors: Sponsor[] = [
         logo: edison,
         link: "https://edisonengineers.ca"
     },
+        {
+        tier: "Bronze",
+        name: "Sika",
+        logo: sika,
+        link: "https://can.sika.com/"
+    },
     {
         tier: "Material",
         name: "Master Builders Solutions Canada Inc.",
         logo: masterbuilders,
         link: "https://www.master-builders-solutions.com/en-us"
-    },
-    {
-        tier: "Material",
-        name: "Sika",
-        logo: sika,
-        link: "https://can.sika.com/"
     },
     {
         tier: "Material",

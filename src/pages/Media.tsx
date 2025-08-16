@@ -1,4 +1,5 @@
 import React from "react";
+import gallery_0 from '../assets/gallery/gallery_000.jpg';
 import gallery_1 from '../assets/gallery/gallery_001.jpg';
 import gallery_2 from '../assets/gallery/gallery_002.jpg';
 import gallery_3 from '../assets/gallery/gallery_003.jpg';
@@ -29,14 +30,15 @@ import gallery_27 from '../assets/gallery/gallery_027.jpg';
 import gallery_28 from '../assets/gallery/gallery_028.jpg';
 import gallery_29 from '../assets/gallery/gallery_029.jpg';
 import gallery_30 from '../assets/gallery/gallery_030.jpg';
-import gallery_31 from '../assets/gallery/gallery_031.jpg';
-import gallery_32 from '../assets/gallery/gallery_032.jpg';
-import gallery_33 from '../assets/gallery/gallery_033.jpg';
-import gallery_34 from '../assets/gallery/gallery_034.jpg';
-import gallery_35 from '../assets/gallery/gallery_035.jpg';
-import gallery_36 from '../assets/gallery/gallery_036.jpg';
+// import gallery_31 from '../assets/gallery/gallery_031.jpg';
+// import gallery_32 from '../assets/gallery/gallery_032.jpg';
+// import gallery_33 from '../assets/gallery/gallery_033.jpg';
+// import gallery_34 from '../assets/gallery/gallery_034.jpg';
+// import gallery_35 from '../assets/gallery/gallery_035.jpg';
+// import gallery_36 from '../assets/gallery/gallery_036.jpg';
 const num_per_row = 5;
 const gallery_items = [
+  gallery_0,
   gallery_1,
   gallery_2,
   gallery_3,
@@ -67,12 +69,12 @@ const gallery_items = [
   gallery_28,
   gallery_29,
   gallery_30,
-  gallery_31,
-  gallery_32,
-  gallery_33,
-  gallery_34,
-  gallery_35,
-  gallery_36,
+  // gallery_31,
+  // gallery_32,
+  // gallery_33,
+  // gallery_34,
+  // gallery_35,
+  // gallery_36,
 ];
 
 let rows : string[][] = [];
