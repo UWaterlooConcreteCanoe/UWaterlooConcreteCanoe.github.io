@@ -18,46 +18,46 @@ export const carouselTeams: CarouselTeam[] = [
     {
         name: "Hull Design",
         image: HullDesign,
-        link: "http://localhost:3000/#/subteams/?team=0"
+        link: "https://waterlooconcretecanoe.ca/#/subteams/?team=0"
     },
     {
         name: "Concrete Mix Design",
         image: ConcreteMixDesign,
-        link: "http://localhost:3000/#/subteams/?team=1"
+        link: "https://waterlooconcretecanoe.ca/#/subteams/?team=1"
     },
     {
         name: "Spirit",
         image: Spirit,
-        link: "http://localhost:3000/#/subteams/?team=2"
+        link: "https://waterlooconcretecanoe.ca/#/subteams/?team=2"
     },
     {
         name: "Programming",
         image: Programming,
-        link: "http://localhost:3000/#/subteams/?team=3"
+        link: "https://waterlooconcretecanoe.ca/#/subteams/?team=3"
     },
     {
         name: "Construction",
         image: Construction,
-        link: "http://localhost:3000/#/subteams/?team=4"
+        link: "https://waterlooconcretecanoe.ca/#/subteams/?team=4"
     },
     {
         name: "Paddling",
         image: Paddling,
-        link: "http://localhost:3000/#/subteams/?team=5"
+        link: "https://waterlooconcretecanoe.ca/#/subteams/?team=5"
     },
     // {
     //     name: "Finance",
     //     image: Structural,
-    //     link: "http://localhost:3000/#/subteams/?team=6"
+    //     link: "https://waterlooconcretecanoe.ca/#/subteams/?team=6"
     // },
     {
         name: "Structural",
         image: Structural,
-        link: "http://localhost:3000/#/subteams/?team=7"
+        link: "https://waterlooconcretecanoe.ca/#/subteams/?team=7"
     },
     {
         name: "Sustainability",
         image: Sustainability,
-        link: "http://localhost:3000/#/subteams/?team=8"
+        link: "https://waterlooconcretecanoe.ca/#/subteams/?team=8"
     },
 ];
