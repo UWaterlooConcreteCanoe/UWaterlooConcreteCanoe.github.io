@@ -48,7 +48,7 @@ const subteams: SubteamsProps[] = [
 function Subteams() {
 
     // Make it possible to set the state (subteam selected) on load with a param.
-    const [subteamId, setSubteamId] = useSearchParams();
+    const [subteamId, ] = useSearchParams();
 
     const [selectedSubteam, setSelectedSubteam] = useState<SubteamsProps>(subteams[subteamId.get("team") ? parseInt(subteamId.get("team")!.toString()) : 0]);
 
